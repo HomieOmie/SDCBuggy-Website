@@ -6,6 +6,12 @@ p { /* Used to make the general text color white */
     color: #FFFFFF;
 }
 
+header {
+    display: flex;
+    align-items: center; /* Vertically center align the elements */
+    justify-content: space-between;
+}
+
 #navbar-logo[src$=".png"] { /* Styling to adjust logo size */
     width: 80px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
@@ -14,8 +20,10 @@ p { /* Used to make the general text color white */
 #navbar-wrapper {
     text-align: right;
 }
+
 #navbar-wrapper a {
     color : #FFFFFF;
+    text-decoration: none;
 }
 
 #navbar-list {
