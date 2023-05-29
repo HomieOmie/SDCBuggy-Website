@@ -6,17 +6,19 @@ p { /* Used to make the general text color white */
     color: #FFFFFF;
 }
 
+/* Styling for the header */
 header {
     display: flex;
-    align-items: center; /* Vertically center align the elements */
+    align-items: center;
     justify-content: space-between;
 }
 
 #navbar-logo[src$=".png"] { /* Styling to adjust logo size */
-    width: 80px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 80px;
+    height: auto;
 }
 
+/* Styling for the entire navbar section */
 #navbar-wrapper {
     text-align: right;
 }
@@ -31,11 +33,11 @@ header {
     background-color: #4fb671;
 }
 
-#navbar-list {
+#navbar-links {
     display: inline-flex;
 }
 
-#navbar-list li {
+#navbar-links li {
     margin-right: 10px;
 }
 
