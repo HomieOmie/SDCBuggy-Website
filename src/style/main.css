@@ -26,6 +26,11 @@ header {
     text-decoration: none;
 }
 
+#navbar-wrapper a:hover {
+    color: #7e3f85;
+    background-color: #4fb671;
+}
+
 #navbar-list {
     display: inline-flex;
 }
