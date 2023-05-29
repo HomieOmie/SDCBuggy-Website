@@ -6,38 +6,3 @@ p { /* Used to make the general text color white */
     color: #FFFFFF;
 }
 
-/* Styling for the header */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#navbar-logo[src$=".png"] { /* Styling to adjust logo size */
-    width: 80px;
-    height: auto;
-}
-
-/* Styling for the entire navbar section */
-#navbar-wrapper {
-    text-align: right;
-}
-
-#navbar-wrapper a {
-    color : #FFFFFF;
-    text-decoration: none;
-}
-
-#navbar-wrapper a:hover {
-    color: #7e3f85;
-    background-color: #4fb671;
-}
-
-#navbar-links {
-    display: inline-flex;
-}
-
-#navbar-links li {
-    margin-right: 10px;
-}
-
