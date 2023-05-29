@@ -6,3 +6,8 @@ p { /* Used to make the general text color white */
     color: #FFFFFF;
 }
 
+hr.header-line {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent,#FFFFFF, transparent);
+}
