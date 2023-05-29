@@ -1,0 +1,12 @@
+body { /* Used to make the background black */
+    background-color: #000000;
+}
+
+a { /* Used to make the general text color white */
+    color: #FFFFFF;
+}
+
+#navbar-logo[src$=".png"] { /* Styling to adjust logo size */
+    width: 80px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
