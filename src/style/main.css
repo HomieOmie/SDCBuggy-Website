@@ -2,7 +2,7 @@ body { /* Used to make the background black */
     background-color: #000000;
 }
 
-a { /* Used to make the general text color white */
+p { /* Used to make the general text color white */
     color: #FFFFFF;
 }
 
@@ -10,3 +10,19 @@ a { /* Used to make the general text color white */
     width: 80px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
 }
+
+#navbar-wrapper {
+    text-align: right;
+}
+#navbar-wrapper a {
+    color : #FFFFFF;
+}
+
+#navbar-list {
+    display: inline-flex;
+}
+
+#navbar-list li {
+    margin-right: 10px;
+}
+
