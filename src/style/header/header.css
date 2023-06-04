@@ -1,3 +1,7 @@
+header {
+    display : flex;
+}
+
 #header-sdc-logo-blkswht {
     width : 100px;
     height : auto;
