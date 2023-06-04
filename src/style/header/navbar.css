@@ -1,4 +1,9 @@
 #navbar li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 35px;
+}
+
+#navbar a {
+    font-size: 1.5rem;
+    
 }
