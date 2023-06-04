@@ -2,3 +2,19 @@
     display: inline;
     margin-right: 10px;
 }
+
+#credits {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#credits li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#copyright-tag {
+    display: flex;
+    justify-content: center;
+}
