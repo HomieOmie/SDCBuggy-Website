@@ -2,9 +2,18 @@
     display : flex;
     justify-content: space-between;
     align-items: center;
+
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+#header-nav-wrapper-logo-link {
+    display: inline-block;
+    width: 10%;
+    padding-right: 0%;
 }
 
 #header-sdc-logo-blkswht {
-    width : 18%;
+    width: 150%;
     height : auto;
 }
