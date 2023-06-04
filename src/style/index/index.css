@@ -1,3 +1,14 @@
 @import url("../header/header.css");
 @import url("../header/navbar.css");
 @import url("../footer/footer.css");
+
+#mission-statement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items : center;
+
+    border: 10px solid white;
+
+    margin-left: 50px;
+}

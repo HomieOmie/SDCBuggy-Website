@@ -14,5 +14,9 @@
 .footer-links li {
     display: inline;
     margin-right: 10px;
-    
+}
+
+footer {
+    position : fixed;
+    width : 100%;
 }
