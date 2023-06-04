@@ -1,19 +1,23 @@
 #header-nav-wrapper {
     display : flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 
-    margin-right: 150px;
+    margin-right: 30px;
     margin-left: 150px;
 }
 
 #header-nav-wrapper-logo-link {
     display: inline-block;
+    display: block !important;
     width: 10%;
     padding-right: 0%;
 }
 
 #header-sdc-logo-blkswht {
-    width: 150%;
+    display: block !important;
+    width: 150px;
+    min-width: auto;
     height : auto;
 }

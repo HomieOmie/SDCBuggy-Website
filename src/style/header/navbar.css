@@ -1,13 +1,10 @@
-#navbar {
-    white-space: nowrap;
-}
-
 #navbar li {
     display: inline;
     margin-right: 40px;
 }
 
 #navbar a {
+    font-family: 'poppins-regular';
     font-size: 1.5rem;
     text-decoration: none;
 }
