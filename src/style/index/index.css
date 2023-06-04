@@ -1,6 +1,7 @@
 @import url(../header/header.css);
 @import url(../header/navbar.css);
 @import url(../footer/footer.css);
+@import url(../main.css);
 
 #mission-statement a {
     display : flex;

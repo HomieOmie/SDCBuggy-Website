@@ -1,3 +1,8 @@
+#associations {
+    display: flex;
+    justify-content: center;
+}
+
 #associations li {
     display: inline;
     margin-right: 10px;
@@ -14,7 +19,15 @@
     margin-right: 10px;
 }
 
-#copyright-tag {
+#copyright-contact-tag-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+footer {
+    position : fixed;
+    bottom : 0;
+    width:100%;
 }
