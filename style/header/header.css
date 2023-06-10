@@ -1,0 +1,10 @@
+#header-sdc-logo-blkwht {
+    width: 175px;
+    height: auto;
+}
+
+#header-nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

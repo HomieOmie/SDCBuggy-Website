@@ -1,0 +1,20 @@
+#navbar {
+    margin-right: 2rem;
+    text-align: right;
+}
+
+#navbar li {
+    list-style: none;
+    text-decoration: none;
+    display: inline-flex
+}
+
+#navbar li:not(:last-child){
+    margin-right: 1rem;
+}
+
+#navbar li a {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+}

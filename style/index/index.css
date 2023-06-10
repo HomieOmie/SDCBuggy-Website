@@ -1,0 +1,15 @@
+
+/* Importing necessary CSS files fdrom other directories */
+@import url("../main.css");
+@import url("../header/header.css");
+@import url("../header/navbar.css");
+@import url("../footer/footer.css");
+
+#mission-statement p {
+    color: #ffffff;
+}
+
+#mission-statement a {
+    text-decoration: none;
+    color: #ffffff;
+}
