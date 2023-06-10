@@ -5,11 +5,32 @@
 @import url("../header/navbar.css");
 @import url("../footer/footer.css");
 
+#mission-statement {
+    border : 10px solid #ffffff;
+    border-radius : 20px;
+    margin-left : 25%;
+    margin-right : 25%;
+    text-align : center;
+}
+
 #mission-statement p {
-    color: #ffffff;
+    color : #ffffff;
 }
 
 #mission-statement a {
-    text-decoration: none;
-    color: #ffffff;
+    text-decoration : none;
+    color : #ffffff;
+}
+
+#down-carrot {
+    margin-left : 25%;
+    margin-right : 25%;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+#down-carrot a{
+    color : #ffffff;
+    text-decoration-line : none;
 }

@@ -1,31 +1,31 @@
 #footer-wrapper {
     display : flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
 
 }
 
 .footer-links {
-    color: #ffffff;
-    text-decoration: none;
+    color : #ffffff;
+    text-decoration-line : none;
 
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top : 5px;
+    margin-bottom : 5px;
 }
 
 .footer-links li {
-    display: inline;
-    margin-right: 10px;
+    display : inline;
+    margin-right : 10px;
 }
 
 .footer-links li a {
-    color: #ffffff;
-    text-decoration: none;
+    color : #ffffff;
+    text-decoration-line : none;
 }
 
 #copyright-tag {
-    color: #ffffff;
+    color : #ffffff;
 }
 
 footer {
