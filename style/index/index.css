@@ -1,10 +1,11 @@
 
-/* Importing necessary CSS files fdrom other directories */
+/* Imports */
 @import url("../main.css");
 @import url("../header/header.css");
 @import url("../header/navbar.css");
 @import url("../footer/footer.css");
 
+/* Declarations and Property sets */
 :root {
     --clr-1: #FF0000;
     --clr-2: #FFA500;
@@ -26,16 +27,20 @@
     100% { --set-gradient-angle: 360deg; }
 }
 
+/* Styling */
+
+/* mission-statement card styling */
 #mission-statement {
-    border: 1px solid #ffffff;
     border-radius : 20px;
-    margin-left : 25%;
-    margin-right : 25%;
+    margin-left : 35%;
+    margin-right : 35%;
     text-align : center;
     position: relative;
     background-color: #000000;
-    padding-right: 1%;
-    padding-left: 1%;
+    padding-top: .1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: .1rem;
 }
 
 #mission-statement p {
@@ -48,14 +53,16 @@
     color : #ffffff;
 }
 
+/* misssion-statement card animations */
 #mission-statement::before,
 #mission-statement::after {
     content: "";
     position: absolute;
-    inset: 0;
+    inset: -.05rem;
     background: var(--clr-6);
     border-radius: 20px;
     z-index: -1;
+    transition: opacity .5s;
     background: conic-gradient(
         from var(--set-gradient-angle),
         var(--clr-1),
@@ -67,12 +74,13 @@
         var(--clr-7),
         var(--clr-1)
     );
-    animation: rotate-card 200s linear infinite;
+    animation: rotate-card 60s linear infinite;
 }
 #mission-statement::after {
-    filter: blur(3.5rem);
+    filter: blur(1.5rem);
 }
 
+/* down carrot SVG styling */
 #down-carrot {
     margin-left : 25%;
     margin-right : 25%;
@@ -86,7 +94,20 @@
     text-decoration-line : none;
 }
 
-/* This is to add the rainbow blur to the mission-statement card */
+/* SDC title card styling */
+#SDC-title {
+    position: relative;
+    margin-left : 25%;
+    margin-right : 25%;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    
+}
+#SDC-title h1{
+    font-size: 5rem;
+    color: #ffffff
+}
 
 
 
