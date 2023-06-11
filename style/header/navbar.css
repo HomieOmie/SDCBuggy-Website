@@ -1,5 +1,5 @@
 #navbar {
-    margin-right : 2rem;
+    margin-right : 1rem;
     text-align : right;
 }
 
@@ -10,7 +10,7 @@
 }
 
 #navbar li:not(:last-child){
-    margin-right : 1rem;
+    margin-right : 2rem;
 }
 
 #navbar li a {

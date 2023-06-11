@@ -1,10 +1,11 @@
 
-/* Importing necessary CSS files fdrom other directories */
+/* Imports */
 @import url("../main.css");
 @import url("../header/header.css");
 @import url("../header/navbar.css");
 @import url("../footer/footer.css");
 
+/* Declarations and Property sets */
 :root {
     --clr-1: #FF0000;
     --clr-2: #FFA500;
@@ -26,8 +27,10 @@
     100% { --set-gradient-angle: 360deg; }
 }
 
+/* Styling */
+
+/* mission-statement card styling */
 #mission-statement {
-    /* border: 1px solid #ffffff; */
     border-radius : 20px;
     margin-left : 35%;
     margin-right : 35%;
@@ -50,6 +53,7 @@
     color : #ffffff;
 }
 
+/* misssion-statement card animations */
 #mission-statement::before,
 #mission-statement::after {
     content: "";
@@ -76,6 +80,7 @@
     filter: blur(1.5rem);
 }
 
+/* down carrot SVG styling */
 #down-carrot {
     margin-left : 25%;
     margin-right : 25%;
@@ -89,6 +94,7 @@
     text-decoration-line : none;
 }
 
+/* SDC title card styling */
 #SDC-title {
     position: relative;
     margin-left : 25%;
