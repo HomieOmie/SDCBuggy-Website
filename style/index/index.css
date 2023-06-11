@@ -5,21 +5,72 @@
 @import url("../header/navbar.css");
 @import url("../footer/footer.css");
 
+:root {
+    --clr-1: #FF0000;
+    --clr-2: #FFA500;
+    --clr-3: #FFFF00;
+    --clr-4: #00FF00;
+    --clr-5: #0000FF;
+    --clr-6: #800080;
+    --clr-7: #FF0080;
+}
+
+@property --set-gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes rotate-card {
+    0% { --set-gradient-angle: 0deg; }
+    100% { --set-gradient-angle: 360deg; }
+}
+
 #mission-statement {
-    border : 10px solid #ffffff;
+    border: 1px solid #ffffff;
     border-radius : 20px;
     margin-left : 25%;
     margin-right : 25%;
     text-align : center;
+    position: relative;
+    background-color: #000000;
+    padding-right: 1%;
+    padding-left: 1%;
 }
 
 #mission-statement p {
+    font-size: 120%;
     color : #ffffff;
 }
 
 #mission-statement a {
     text-decoration : none;
     color : #ffffff;
+}
+
+#mission-statement::before,
+#mission-statement::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--clr-6);
+    border-radius: 20px;
+    z-index: -1;
+    background: conic-gradient(
+        from var(--set-gradient-angle),
+        var(--clr-1),
+        var(--clr-2),
+        var(--clr-3),
+        var(--clr-4),
+        var(--clr-5),
+        var(--clr-6),
+        var(--clr-7),
+        var(--clr-1)
+    );
+    animation: rotate-card 360s linear infinite;
+}
+#mission-statement::after {
+    filter: blur(3.5rem);
 }
 
 #down-carrot {
@@ -34,3 +85,8 @@
     color : #ffffff;
     text-decoration-line : none;
 }
+
+/* This is to add the rainbow blur to the mission-statement card */
+
+
+
