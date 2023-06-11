@@ -32,8 +32,8 @@
 /* mission-statement card styling */
 #mission-statement {
     border-radius : 20px;
-    margin-left : 35%;
-    margin-right : 35%;
+    margin-left : 33%;
+    margin-right : 33%;
     text-align : center;
     position: relative;
     background-color: #000000;
@@ -60,7 +60,7 @@
     position: absolute;
     inset: -.05rem;
     background: var(--clr-6);
-    border-radius: 20px;
+    border-radius: inherit;
     z-index: -1;
     transition: opacity .5s;
     background: conic-gradient(
@@ -90,6 +90,7 @@
 }
 
 #down-carrot a{
+    margin-top: 10%;
     color : #ffffff;
     text-decoration-line : none;
 }
@@ -97,6 +98,7 @@
 /* SDC title card styling */
 #SDC-title {
     position: relative;
+    margin-top: 10%;
     margin-left : 25%;
     margin-right : 25%;
     display : flex;
@@ -104,10 +106,16 @@
     align-items : center;
     
 }
+
 #SDC-title h1{
     font-size: 5rem;
     color: #ffffff
 }
 
-
+hr.divider {
+    border: 0px solid #ffffff;
+    border-radius: 20px;
+    background-color: #ffffff;
+    height: 4px;
+}
 
