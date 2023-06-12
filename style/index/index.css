@@ -74,7 +74,7 @@
         var(--clr-7),
         var(--clr-1)
     );
-    animation: rotate-card 60s linear infinite;
+    animation: rotate-card 40s linear infinite;
 }
 #mission-statement::after {
     filter: blur(1.5rem);
