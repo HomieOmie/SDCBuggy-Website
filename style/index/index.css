@@ -4,6 +4,7 @@
 @import url("../header/header.css");
 @import url("../header/navbar.css");
 @import url("../footer/footer.css");
+@import url("../font_imports/poppins-bold.css");
 
 /* Declarations and Property sets */
 :root {
@@ -108,6 +109,7 @@
 }
 
 #SDC-title h1{
+    font-family: 'poppins-bold';
     font-size: 5rem;
     color: #ffffff
 }
