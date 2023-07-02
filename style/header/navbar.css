@@ -1,3 +1,6 @@
+
+@import url("../font_imports/poppins-semibold.css");
+
 #navbar {
     margin-right : 1rem;
     text-align : right;
@@ -14,6 +17,7 @@
 }
 
 #navbar li a {
+    font-family: 'poppins-semibold';
     font-size : 1.5rem;
     color : #ffffff;
     text-decoration-line : none;

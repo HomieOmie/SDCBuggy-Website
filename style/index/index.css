@@ -5,6 +5,7 @@
 @import url("../header/navbar.css");
 @import url("../footer/footer.css");
 @import url("../font_imports/poppins-bold.css");
+@import url("../font_imports/poppins-medium.css");
 
 /* Declarations and Property sets */
 :root {
@@ -45,6 +46,7 @@
 }
 
 #mission-statement p {
+    font-family: 'poppins-medium';
     font-size: 120%;
     color : #ffffff;
 }
