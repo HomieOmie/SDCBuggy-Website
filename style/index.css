@@ -1,0 +1,25 @@
+
+header {
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    justify-content: space-between; /* Adds space between navbar and SDC Logo */
+    margin-left: 60px;
+    margin-right: 40px;
+}
+
+#SDC-Logo-img {
+    width: 150px;
+    height: auto;
+}
+#navbar ul li {
+    display: inline; /* Makes list items all inline instead of listed */
+}
+
+#navbar ul li:not(:last-child) {
+    margin-right: 30px; /* Adds spacing on the right of each navbar element except for the last */
+}
+
+#navbar a {
+    text-decoration: none;
+    font-size: 23px;
+}
