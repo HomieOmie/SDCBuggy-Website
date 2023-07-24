@@ -11,15 +11,45 @@ header {
     width: 150px;
     height: auto;
 }
-#navbar ul li {
+
+.navbar ul li {
     display: inline; /* Makes list items all inline instead of listed */
 }
 
-#navbar ul li:not(:last-child) {
+.navbar ul li:not(:last-child) {
     margin-right: 30px; /* Adds spacing on the right of each navbar element except for the last */
 }
 
-#navbar a {
+.navbar a {
     text-decoration: none;
     font-size: 23px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: blueviolet;
+}
+
+@media(max-width:765px){
+    .hamburger {
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
