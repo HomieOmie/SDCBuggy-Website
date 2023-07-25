@@ -1,5 +1,13 @@
 /* TODO: Make a new file for Poppins font imports and start importing as needed */
 
+html {
+    background-color: #000001;
+}
+
+header {
+    margin-top: 10px;
+    margin-right: 35px;
+}
 
 .SDC-Logo-img {
     width: 150px;
@@ -27,6 +35,11 @@ a {
     justify-content: space-between;
     align-items: center;
     gap: 60px;
+}
+
+.nav-item a {
+    font-size: 22px;
+    color: #FFFFFF;
 }
 
 .hamburger {
