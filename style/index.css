@@ -1,12 +1,17 @@
-/* TODO: Make a new file for Poppins font imports and start importing as needed */
+/* TODO: organize this file by grouping tage types and adding comments */
+/* TODO: once navbar v1.0 is finalized, move all related styling to new directory and folder and import here */
+
+/* font-type imports */
+@import url("font_imports/poppins-medium.css");
 
 html {
     background-color: #000001;
 }
 
 header {
-    margin-top: 10px;
+    margin-top: 15px;
     margin-right: 35px;
+    margin-left: 24px;
 }
 
 .SDC-Logo-img {
@@ -28,6 +33,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
+    cursor: default;
 }
 
 .nav-menu {
@@ -38,8 +44,32 @@ a {
 }
 
 .nav-item a {
+    font-family: 'poppins-medium';
     font-size: 22px;
     color: #FFFFFF;
+    transition: font-size .3s ease-in-out;
+}
+
+.nav-item-active a {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 9px;
+    padding-right: 9px;
+    /* border: 2px solid white; */
+    border-radius: 15px;
+    font-family: 'poppins-medium';
+    font-size: 22px;
+    background-color: rgb(57, 45, 162);
+    color: #FFFFFF;
+    transition: font-size .35s ease-in-out;
+}
+
+.nav-item a:hover {
+    font-size: 24px;
+}
+
+.nav-item-active a:hover {
+    font-size: 24px;
 }
 
 .hamburger {
@@ -57,7 +87,8 @@ a {
     background-color: blueviolet;
 }
 
-@media(max-width:780px) {
+/* TODO: Re-work the entire hamburger responsive navbar from scratch */
+@media(max-width:938px) {
     .hamburger {
         display: block;
     }
@@ -75,16 +106,18 @@ a {
     }
 
     .nav-menu {
+        justify-content: center;
+        align-content: center;
         position: fixed;
-        left: -850px;
-        top: 70px;
+        left: -1050px;
+        top: 90px;
         gap: 0;
         flex-direction: column;
         width: 100%;
         text-align: center;
         transition: 0.3s;
         z-index: 1;
-        background-color: brown;
+        background-color: rgb(129, 56, 148);
     }
 
     .nav-item {
