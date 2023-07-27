@@ -1,0 +1,10 @@
+/* TODO: Separate this into a navbar file and a logo file */
+
+@import url("navbar.css"); /* navbar import */
+@import url("logo.css"); /* logo import */
+
+header {
+    margin-top: 15px;
+    margin-right: 35px;
+    margin-left: 24px;
+}
