@@ -51,15 +51,8 @@ a {
 }
 
 .nav-item-active a {
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 9px;
-    padding-right: 9px;
-    /* border: 2px solid white; */
-    border-radius: 15px;
     font-family: 'poppins-medium';
     font-size: 22px;
-    background-color: rgb(57, 45, 162);
     color: #FFFFFF;
     transition: font-size .35s ease-in-out;
 }
@@ -70,6 +63,63 @@ a {
 
 .nav-item-active a:hover {
     font-size: 24px;
+}
+
+:root {
+    --clr-1: #FF0000;
+    --clr-2: #FFA500;
+    --clr-3: #FFFF00;
+    --clr-4: #00FF00;
+    --clr-5: #0000FF;
+    --clr-6: #800080;
+    --clr-7: #FF0080;
+}
+
+@property --set-gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes rotate-card {
+    0% { --set-gradient-angle: 0deg; }
+    100% { --set-gradient-angle: 360deg; }
+}
+
+.nav-item-active {
+    background-color: #000000;
+    position: relative;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+}
+
+.nav-item-active::before,
+.nav-item-active::after {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    border-radius: 12px;
+    background: conic-gradient(
+        from var(--set-gradient-angle),
+        var(--clr-1),
+        var(--clr-2),
+        var(--clr-3),
+        var(--clr-4),
+        var(--clr-5),
+        var(--clr-6),
+        var(--clr-7),
+        var(--clr-1)
+    );
+    animation: rotate-card 40s linear infinite;
+    z-index: -1; /* Move the pseudo-element behind the .nav-item-active */
+}
+
+.nav-item-active::after {
+    filter: blur(8px)
 }
 
 .hamburger {
