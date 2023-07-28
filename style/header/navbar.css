@@ -116,7 +116,6 @@
     background-color: blueviolet;
 }
 
-/* TODO: Re-work the entire hamburger responsive navbar from scratch */
 @media(max-width:938px) {
     .hamburger {
         display: block;
