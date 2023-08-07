@@ -101,21 +101,6 @@
     filter: blur(13px);
 }
 
-.hamburger {
-    display: none;
-    cursor: pointer;
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: blueviolet;
-}
-
 /* ------------------------------------------------------------------------ */
 
 .hamburger {
@@ -124,12 +109,18 @@
 }
 
 .bar {
+    border-radius: 20px;
     display: block;
     width: 25px;
     height: 3px;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     background-color: #FFFFFF;
+}
+
+.hamburger.active .bar {
+    height: 4px;
+    margin: 10px auto;
 }
 
 @media(max-width: 980px){
