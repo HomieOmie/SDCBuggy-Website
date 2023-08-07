@@ -29,7 +29,7 @@
     transition: font-size .3s ease-in-out;
 }
 
-.nav-item-active a {
+.nav-item-current a {
     font-family: 'poppins-medium';
     font-size: 22px;
     color: #FFFFFF;
@@ -40,9 +40,10 @@
     font-size: 24px;
 }
 
-.nav-item-active a:hover {
+.nav-item-current a:hover {
     font-size: 24px;
 }
+
 
 :root {
     --clr-1: #FF0000;
@@ -65,7 +66,7 @@
     100% { --set-gradient-angle: 360deg; }
 }
 
-.nav-item-active {
+.nav-item-current {
     background-color: #000002;
     position: relative;
     text-align: center;
@@ -76,8 +77,9 @@
     border-radius: 10px;
 }
 
-.nav-item-active::before,
-.nav-item-active::after {
+@media(min-width: 980px){
+.nav-item-current::before,
+.nav-item-current::after {
     content: "";
     position: absolute;
     inset: -1px;
@@ -97,9 +99,11 @@
     z-index: -1; /* Move the pseudo-element behind the .nav-item-active */
 }
 
-.nav-item-active::after {
+.nav-item-current::after {
     filter: blur(13px);
 }
+}
+
 
 /* ------------------------------------------------------------------------ */
 
@@ -130,6 +134,12 @@
 
     .nav-menu {
         position: fixed;
-        Left: -800%;
+        top: 70px;
+        /* Left: -800%; */
+        flex-direction: column;
+    }
+
+    .nav-item-current {
+        background-color: rgba(0, 0, 0, 0); /* Makes background transparent */
     }
 }
