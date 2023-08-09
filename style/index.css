@@ -25,6 +25,42 @@ html {
     align-items: center;
 }
 
-footer {
-    background-color: bisque;
+.invert {
+    filter: invert(100%);
+}
+
+.mentions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8vh;
+}
+
+.mentions img {
+    width: 10vh;
+    height: auto;
+}
+
+.contributors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh;
+}
+
+.contributors p {
+    font-size: 2.3vh;
+    color: #FFFFFF;
+}
+
+.copyright p {
+    font-size: 2.3vh;
+    color: #FFFFFF;
 }
