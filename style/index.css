@@ -3,6 +3,7 @@
 
 /* imports */
 @import url("font_imports/poppins-medium.css"); /* font import */
+@import url("font_imports/poppins-bold.css");
 @import url("header/header.css"); /* header styling import */
 
 html {
@@ -10,14 +11,31 @@ html {
     height: 100%;
 }
 
+body {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.main1 h1 {
+    font-family: 'poppins-bold';
+    font-size: 10vh;
+    color: #FFFFFF;
+    text-shadow: 10px 10px 12px rgb(34, 0, 86);
+    top: 50%;
+}
+
 .main1 {
     height: calc(100vh - 100px);
-    background-color: aqua;
+    background-image: url("../images/media/malice-front-sunny.jpg");
+    /* background-image: url("../images/media/design-comp-group-12.jpg"); */
+    background-size: cover;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     scroll-snap-align: start;
 }
+
 
 
 .main2 {
@@ -72,7 +90,8 @@ html {
 .scroll-button-background {
     padding: 0 0 0 0;
     position: fixed;
-    background-color: #00ff55;
+    background-color: #000000;
+    border: 1px groove rgb(34, 0, 86);
     top: 40%;
     right: 3vh;
     height: 10vh;
@@ -82,6 +101,11 @@ html {
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     transition: transform .3s ease-in-out;
+}
+
+.scroll-button-background { 
+    box-shadow: 0 0 10px 6px rgb(34, 0, 86);
+    opacity: .7;
 }
 
 #carrotImage {
