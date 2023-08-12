@@ -1,4 +1,5 @@
 // TODO: Make this more efficient
+// TODO: Refactor the code into different files and imports
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
