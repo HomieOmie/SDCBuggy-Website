@@ -1,0 +1,66 @@
+.bar {
+    border-radius: 20px;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    background-color: #FFFFFF;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger.active .bar {
+    height: 4px;
+    margin: 10px auto;
+}
+
+@media(max-width: 980px){
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        padding-top: 80px;
+        gap: 10px;
+        padding-left: 0;
+        padding-bottom: 80px;
+        top: 90px;
+        left: -850%;
+        width: 100%;
+        height: 60%;
+        background-color: rgba(12, 1, 35, 0.7);
+        flex-direction: column;
+        align-items: center;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu.active li {
+        margin-bottom: 10px;
+    }
+
+    .nav-menu.active a {
+        margin-bottom: 10px;
+    }
+
+    .nav-menu.active .nav-item a {
+        font-size: 30px;
+    }
+
+    .nav-menu.active .nav-item-current a {
+        color: #cf82e2;
+        font-size: 30px;
+    }
+
+    .nav-item-current {
+        background-color: rgba(0, 0, 0, 0); /* Makes background transparent */
+    }
+}

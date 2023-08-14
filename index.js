@@ -83,5 +83,5 @@ document.addEventListener("DOMContentLoaded", function () {
     
       // Start the slideshow
     showSlide(currentSlideIndex);
-    setInterval(nextSlide, 2000);
+    setInterval(nextSlide, 10000);
 });
