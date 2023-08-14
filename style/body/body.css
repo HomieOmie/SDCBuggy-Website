@@ -1,0 +1,35 @@
+@import url("main1.css");
+@import url("main2.css");
+
+body {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.scroll-button-background {
+    padding: 0 0 0 0;
+    position: fixed;
+    background-color: #000000;
+    border: 1px groove rgb(34, 0, 86);
+    top: 40%;
+    right: 3vh;
+    height: 10vh;
+    width: 5vh;
+    border-radius: 10vh;
+    display: flex; /* Add flex display */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    transition: transform .3s ease-in-out;
+}
+
+.scroll-button-background { 
+    box-shadow: 0 0 10px 6px rgb(34, 0, 86);
+    opacity: .7;
+}
+
+#carrotImage {
+    cursor: pointer;
+    width: auto;
+    height: 7vh;
+    padding-top: 3vh;
+}
