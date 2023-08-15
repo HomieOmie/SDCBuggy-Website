@@ -2,7 +2,38 @@
     height: 100vh;
     background-color: blueviolet;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     scroll-snap-align: start;
+}
+
+.link-list { 
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: stretch; */
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    flex: 1;
+}
+
+.link-list li {
+    background-color: aqua;
+    border: 2px solid black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding: 0 10px;
+}
+
+.link-list a {
+    display: block;
+    text-decoration: none;
+    color: blueviolet; /* Text color for each link */
+    text-align: center;
+    padding: 10px 0;
 }
