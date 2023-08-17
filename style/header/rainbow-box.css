@@ -48,7 +48,7 @@
         var(--clr-7),
         var(--clr-1)
     );
-    animation: rotate-card 40s linear infinite;
+    animation: rotate-card 30s linear infinite;
     z-index: -1; /* Move the pseudo-element behind the .nav-item-active */
 }
 

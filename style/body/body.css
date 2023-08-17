@@ -33,3 +33,8 @@ body {
     height: 7vh;
     padding-top: 3vh;
 }
+
+.scroll-button-background:hover {
+    opacity: 1;
+    box-shadow: 0 0 10px 6px rgb(92, 10, 213);
+}
