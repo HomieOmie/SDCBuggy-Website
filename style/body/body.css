@@ -20,6 +20,7 @@ body {
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     transition: transform .3s ease-in-out;
+    z-index: 1;
 }
 
 .scroll-button-background { 

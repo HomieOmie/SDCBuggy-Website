@@ -2,11 +2,10 @@
 // TODO: Refactor the code into different files and imports
 import { navbarEffects } from "./header/navbar/navbar.js";
 import { bodyGeneralEffects } from "./body/body.js";
+import { main2Effects } from "./body/main2/main2.js";
 
-const switchButton = document.getElementById("carrotImage");
+
 const main1Section = document.querySelector(".main1");
-const main2Section = document.querySelector(".main2");
-const switchButtonBackground = document.querySelector(".scroll-button-background");
 const malice_front_sunny = {
     "image-url": "../images/media/malice-front-sunny.jpg"
 };
@@ -27,39 +26,6 @@ const vice_hill5_incoming = {
 };
 const slides = [malice_front_sunny, bane_front_hill2, design_comp_group_12,
                 vice_side_misty, bow_to_bane, vice_hill5_incoming]
-const main2Team = document.querySelector(".main2-team");
-const main2Roles = document.querySelector(".main2-roles");
-const main2Events = document.querySelector(".main2-events");
-const main2History = document.querySelector(".main2-history");
-const main2Alumni = document.querySelector(".main2-alumni");
-
-function switchButtonClickEffect() {
-    switchButton.addEventListener("click", function () {
-        if (main1Section.getBoundingClientRect().top < 0) {
-            // main1Section.scrollIntoView({ behavior: "smooth" });
-            window.scrollTo({ top: 0, behavior: "smooth" });
-            switchButtonBackground.style.transform = "rotate(0deg)";
-        } 
-
-        else {
-            main2Section.scrollIntoView({ behavior: "smooth" });
-            switchButtonBackground.style.transform = "rotate(180deg)";
-        }
-    });
-
-    window.addEventListener("scroll", function () {
-
-        if (main2Section.getBoundingClientRect().y + 75 < (window.innerHeight / 2)) {
-            switchButtonBackground.style.transform = "rotate(180deg)";
-        }
-
-        else {
-            switchButtonBackground.style.transform = "rotate(0deg)";
-        
-        }
-
-    });
-};
 
 function main1ImageSlideshow() {
     document.addEventListener("DOMContentLoaded", function () {
@@ -86,105 +52,14 @@ function main1ImageSlideshow() {
 // TODO: put all of the main2 stuff into a different file and import it
 
 
-function main2TeamHoverEffect() {
 
-    main2Team.addEventListener("mouseenter", function () {
-        others = [main2Roles, main2Events, main2History, main2Alumni]
-        for (let i = 0; i < others.length; i++){
-            others[i].style.filter = "blur(.35vw)";
-        }
-    });
-    
-    main2Team.addEventListener("mouseleave", function () {
-        others = [main2Roles, main2Events, main2History, main2Alumni]
-        for (let i = 0; i < others.length; i++){
-            others[i].style.filter = "none";
-        }
-    });
-};
-
-function main2RolesHoverEffect() {
-
-    main2Roles.addEventListener("mouseenter", function () {
-        others = [main2Team, main2Events, main2History, main2Alumni]
-        for (let i = 0; i < others.length; i++){
-            others[i].style.filter = "blur(.35vw)";
-        }
-    });
-    
-    main2Roles.addEventListener("mouseleave", function () {
-        others = [main2Team, main2Events, main2History, main2Alumni]
-        for (let i = 0; i < others.length; i++){
-            others[i].style.filter = "none";
-        }
-    });
-};
-
-function main2EventsHoverEffect() {
-
-    main2Events.addEventListener("mouseenter", function () {
-        others = [main2Team, main2Roles, main2History, main2Alumni]
-        for (let i = 0; i < others.length; i++){
-            others[i].style.filter = "blur(.35vw)";
-        }
-    });
-    
-    main2Events.addEventListener("mouseleave", function () {
-        others = [main2Team, main2Roles, main2History, main2Alumni]
-        for (let i = 0; i < others.length; i++){
-            others[i].style.filter = "none";
-        }
-    });
-};
-
-function main2HistoryHoverEffect() {
-
-    main2History.addEventListener("mouseenter", function () {
-        others = [main2Team, main2Roles, main2Events, main2Alumni]
-        for (let i = 0; i < others.length; i++){
-            others[i].style.filter = "blur(.35vw)";
-        }
-    });
-    
-    main2History.addEventListener("mouseleave", function () {
-        others = [main2Team, main2Roles, main2Events, main2Alumni]
-        for (let i = 0; i < others.length; i++){
-            others[i].style.filter = "none";
-        }
-    });
-};
-
-function main2AlumniHoverEffect() {
-
-    main2Alumni.addEventListener("mouseenter", function () {
-        others = [main2Team, main2Roles, main2Events, main2History]
-        for (let i = 0; i < others.length; i++){
-            others[i].style.filter = "blur(.35vw)";
-        }
-    });
-    
-    main2Alumni.addEventListener("mouseleave", function () {
-        others = [main2Team, main2Roles, main2Events, main2History]
-        for (let i = 0; i < others.length; i++){
-            others[i].style.filter = "none";
-        }
-    });
-};
-
-function main2HoverEffects() {
-    main2TeamHoverEffect();
-    main2RolesHoverEffect();
-    main2EventsHoverEffect();
-    main2HistoryHoverEffect();
-    main2AlumniHoverEffect();
-};
 
 
 function mainLoop() {
     navbarEffects();
     bodyGeneralEffects();
+    main2Effects();
 
-    main2HoverEffects();
     main1ImageSlideshow();
 }
 
