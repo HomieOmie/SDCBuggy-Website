@@ -1,6 +1,7 @@
 @import url("../font_imports/poppins-bold.css");
 
 .main2 {
+    position: relative;
     height: 100vh;
     background-color: blueviolet;
     display: flex;
@@ -35,7 +36,7 @@
 .link-list a {
     display: block;
     font-family: 'poppins-bold';
-    font-size: 3vw;
+    font-size: 5.5vh;
     text-decoration: none;
     color: #FFFFFF; /* Text color for each link */
     text-align: center;
@@ -44,6 +45,12 @@
 }
 
 .link-list a:hover {
-    font-size: 3.5vw;
     cursor: pointer;
+}
+
+.link-list .top-left-position {
+    border: none;
+    margin-right: 0;
+    margin-bottom: 0;
+    transition: margin-right 0.35s ease-in-out, margin-bottom 0.35s ease-in-out;
 }
