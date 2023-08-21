@@ -1,6 +1,7 @@
 // TODO: Make this more efficient
 // TODO: Refactor the code into different files and imports
 import { navbarEffects } from "./header/navbar/navbar.js";
+import { bodyGeneralEffects } from "./body/body.js";
 
 const switchButton = document.getElementById("carrotImage");
 const main1Section = document.querySelector(".main1");
@@ -181,8 +182,9 @@ function main2HoverEffects() {
 
 function mainLoop() {
     navbarEffects();
+    bodyGeneralEffects();
+
     main2HoverEffects();
-    switchButtonClickEffect();
     main1ImageSlideshow();
 }
 
