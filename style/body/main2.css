@@ -40,4 +40,9 @@
     color: #FFFFFF; /* Text color for each link */
     text-align: center;
     padding: 10px 0;
+    transition: font-size 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.link-list a:hover {
+    font-size: 3.5vw;
 }

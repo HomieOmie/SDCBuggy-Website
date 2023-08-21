@@ -85,3 +85,105 @@ document.addEventListener("DOMContentLoaded", function () {
     showSlide(currentSlideIndex);
     setInterval(nextSlide, 10000);
 });
+
+const main2Team = document.querySelector(".main2-team");
+const main2Roles = document.querySelector(".main2-roles");
+const main2Events = document.querySelector(".main2-events");
+const main2History = document.querySelector(".main2-history");
+const main2Alumni = document.querySelector(".main2-alumni");
+
+function main2TeamHoverEffect() {
+
+    main2Team.addEventListener("mouseenter", function () {
+        others = [main2Roles, main2Events, main2History, main2Alumni]
+        for (let i = 0; i < others.length; i++){
+            others[i].style.filter = "blur(.35vw)";
+        }
+    });
+    
+    main2Team.addEventListener("mouseleave", function () {
+        others = [main2Roles, main2Events, main2History, main2Alumni]
+        for (let i = 0; i < others.length; i++){
+            others[i].style.filter = "none";
+        }
+    });
+};
+
+function main2RolesHoverEffect() {
+
+    main2Roles.addEventListener("mouseenter", function () {
+        others = [main2Team, main2Events, main2History, main2Alumni]
+        for (let i = 0; i < others.length; i++){
+            others[i].style.filter = "blur(.35vw)";
+        }
+    });
+    
+    main2Roles.addEventListener("mouseleave", function () {
+        others = [main2Team, main2Events, main2History, main2Alumni]
+        for (let i = 0; i < others.length; i++){
+            others[i].style.filter = "none";
+        }
+    });
+};
+
+function main2EventsHoverEffect() {
+
+    main2Events.addEventListener("mouseenter", function () {
+        others = [main2Team, main2Roles, main2History, main2Alumni]
+        for (let i = 0; i < others.length; i++){
+            others[i].style.filter = "blur(.35vw)";
+        }
+    });
+    
+    main2Events.addEventListener("mouseleave", function () {
+        others = [main2Team, main2Roles, main2History, main2Alumni]
+        for (let i = 0; i < others.length; i++){
+            others[i].style.filter = "none";
+        }
+    });
+};
+
+function main2HistoryHoverEffect() {
+
+    main2History.addEventListener("mouseenter", function () {
+        others = [main2Team, main2Roles, main2Events, main2Alumni]
+        for (let i = 0; i < others.length; i++){
+            others[i].style.filter = "blur(.35vw)";
+        }
+    });
+    
+    main2History.addEventListener("mouseleave", function () {
+        others = [main2Team, main2Roles, main2Events, main2Alumni]
+        for (let i = 0; i < others.length; i++){
+            others[i].style.filter = "none";
+        }
+    });
+};
+
+function main2AlumniHoverEffect() {
+
+    main2Alumni.addEventListener("mouseenter", function () {
+        others = [main2Team, main2Roles, main2Events, main2History]
+        for (let i = 0; i < others.length; i++){
+            others[i].style.filter = "blur(.35vw)";
+        }
+    });
+    
+    main2Alumni.addEventListener("mouseleave", function () {
+        others = [main2Team, main2Roles, main2Events, main2History]
+        for (let i = 0; i < others.length; i++){
+            others[i].style.filter = "none";
+        }
+    });
+};
+
+function main2HoverEffects() {
+    main2TeamHoverEffect();
+    main2RolesHoverEffect();
+    main2EventsHoverEffect();
+    main2HistoryHoverEffect();
+    main2AlumniHoverEffect();
+};
+
+main2HoverEffects();
+
