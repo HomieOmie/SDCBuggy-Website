@@ -87,10 +87,8 @@ function main2HoverEffects() {
     main2AlumniHoverEffect();
 };
 
-// TODO: refactor this and use more for loops
-function main2TeamClickExpansionEffect() {
-    
-    
+function main2TeamLiClickEffect(){
+
     main2Team.addEventListener("click", () => {
 
         main2TeamLiClick.forEach(card => {
@@ -105,6 +103,9 @@ function main2TeamClickExpansionEffect() {
         main2TopLeftPosition.style.marginRight = "85%";
         main2TopLeftPosition.style.marginBottom = "40%";
     });
+};
+
+function main2RolesLiClickEffect(){
 
     main2Roles.addEventListener("click", () => {
 
@@ -120,6 +121,9 @@ function main2TeamClickExpansionEffect() {
         main2TopLeftPosition.style.marginRight = "85%";
         main2TopLeftPosition.style.marginBottom = "40%";
     });
+};
+
+function main2EventsLiClickEffect(){
 
     main2Events.addEventListener("click", () => {
         
@@ -135,6 +139,9 @@ function main2TeamClickExpansionEffect() {
         main2TopLeftPosition.style.marginRight = "85%";
         main2TopLeftPosition.style.marginBottom = "40%";
     });
+};
+
+function main2HistoryLiClickEffect(){
 
     main2History.addEventListener("click", () => {
         
@@ -150,6 +157,9 @@ function main2TeamClickExpansionEffect() {
         main2TopLeftPosition.style.marginRight = "85%";
         main2TopLeftPosition.style.marginBottom = "40%";
     });
+};
+
+function main2AlumniLiCLickEffect(){
 
     main2Alumni.addEventListener("click", () => {
         
@@ -165,6 +175,15 @@ function main2TeamClickExpansionEffect() {
         main2TopLeftPosition.style.marginRight = "85%";
         main2TopLeftPosition.style.marginBottom = "40%";
     });
+};
+
+function main2TeamClickExpansionEffect() {
+    
+    main2TeamLiClickEffect();
+    main2RolesLiClickEffect();
+    main2EventsLiClickEffect();
+    main2HistoryLiClickEffect();
+    main2AlumniLiCLickEffect();
 }
 
 export function main2Effects() {
