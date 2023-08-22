@@ -21,3 +21,5 @@ export const main2RolesLiClick = [main2TeamLi, main2EventsLi, main2HistoryLi, ma
 export const main2EventsLiClick = [main2TeamLi, main2RolesLi, main2HistoryLi, main2AlumniLi];
 export const main2HistoryLiClick = [main2TeamLi, main2RolesLi, main2EventsLi, main2AlumniLi];
 export const main2AlumniLiClick = [main2TeamLi, main2RolesLi, main2EventsLi, main2HistoryLi];
+
+export const xButton = document.querySelector(".x-button");

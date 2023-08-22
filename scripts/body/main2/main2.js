@@ -2,7 +2,7 @@ import { main2Team, main2Roles, main2Events, main2History, main2Alumni,
         main2TeamHover, main2RolesHover, main2EventsHover, main2HistoryHover,
         main2AlumniHover, main2TeamLi, main2RolesLi, main2EventsLi,
         main2HistoryLi, main2AlumniLi, main2TeamLiClick, main2RolesLiClick,
-        main2EventsLiClick, main2HistoryLiClick, main2AlumniLiClick} from "./main2Constants.js";
+        main2EventsLiClick, main2HistoryLiClick, main2AlumniLiClick, xButton} from "./main2Constants.js";
 
 function main2TeamHoverEffect() {
 
@@ -88,7 +88,6 @@ function main2HoverEffects() {
 };
 
 function main2TeamLiClickEffect(){
-    const xButton = document.querySelector(".x-button");
 
     main2Team.addEventListener("click", () => {
 
@@ -115,7 +114,7 @@ function main2TeamLiClickEffect(){
 
             setTimeout(() => {
                 main2TeamLi.classList.remove("top-left-position");
-            }, 350);
+            }, 250);
             
             main2TeamLiClick.forEach(card => {
                 card.style.display = "flex";
@@ -132,6 +131,8 @@ function main2RolesLiClickEffect(){
             card.style.display = "none";
         });
 
+        xButton.classList.toggle("active");
+
         main2RolesLi.classList.toggle("top-left-position");
 
         // Note: this can only be defined here as the class will not load until the toggle event happens above
@@ -139,6 +140,22 @@ function main2RolesLiClickEffect(){
 
         main2TopLeftPosition.style.marginRight = "85%";
         main2TopLeftPosition.style.marginBottom = "40%";
+
+        xButton.addEventListener("click", () => {
+
+            xButton.classList.remove("active");
+
+            main2TopLeftPosition.style.marginRight = "0%";
+            main2TopLeftPosition.style.marginBottom = "0%";
+
+            setTimeout(() => {
+                main2RolesLi.classList.remove("top-left-position");
+            }, 250);
+            
+            main2RolesLiClick.forEach(card => {
+                card.style.display = "flex";
+            });
+        });
     });
 };
 
@@ -150,6 +167,8 @@ function main2EventsLiClickEffect(){
             card.style.display = "none";
         });
 
+        xButton.classList.toggle("active");
+
         main2EventsLi.classList.toggle("top-left-position");
 
         // Note: this can only be defined here as the class will not load until the toggle event happens above
@@ -157,6 +176,22 @@ function main2EventsLiClickEffect(){
 
         main2TopLeftPosition.style.marginRight = "85%";
         main2TopLeftPosition.style.marginBottom = "40%";
+
+        xButton.addEventListener("click", () => {
+
+            xButton.classList.remove("active");
+
+            main2TopLeftPosition.style.marginRight = "0%";
+            main2TopLeftPosition.style.marginBottom = "0%";
+
+            setTimeout(() => {
+                main2EventsLi.classList.remove("top-left-position");
+            }, 250);
+            
+            main2EventsLiClick.forEach(card => {
+                card.style.display = "flex";
+            });
+        });
     });
 };
 
@@ -168,6 +203,8 @@ function main2HistoryLiClickEffect(){
             card.style.display = "none";
         });
 
+        xButton.classList.toggle("active");
+
         main2HistoryLi.classList.toggle("top-left-position");
 
         // Note: this can only be defined here as the class will not load until the toggle event happens above
@@ -175,6 +212,22 @@ function main2HistoryLiClickEffect(){
 
         main2TopLeftPosition.style.marginRight = "85%";
         main2TopLeftPosition.style.marginBottom = "40%";
+
+        xButton.addEventListener("click", () => {
+
+            xButton.classList.remove("active");
+
+            main2TopLeftPosition.style.marginRight = "0%";
+            main2TopLeftPosition.style.marginBottom = "0%";
+
+            setTimeout(() => {
+                main2HistoryLi.classList.remove("top-left-position");
+            }, 250);
+            
+            main2HistoryLiClick.forEach(card => {
+                card.style.display = "flex";
+            });
+        });
     });
 };
 
@@ -186,6 +239,8 @@ function main2AlumniLiCLickEffect(){
             card.style.display = "none";
         });
 
+        xButton.classList.toggle("active");
+
         main2AlumniLi.classList.toggle("top-left-position");
 
         // Note: this can only be defined here as the class will not load until the toggle event happens above
@@ -193,6 +248,22 @@ function main2AlumniLiCLickEffect(){
 
         main2TopLeftPosition.style.marginRight = "85%";
         main2TopLeftPosition.style.marginBottom = "40%";
+
+        xButton.addEventListener("click", () => {
+
+            xButton.classList.remove("active");
+
+            main2TopLeftPosition.style.marginRight = "0%";
+            main2TopLeftPosition.style.marginBottom = "0%";
+
+            setTimeout(() => {
+                main2AlumniLi.classList.remove("top-left-position");
+            }, 250);
+            
+            main2AlumniLiClick.forEach(card => {
+                card.style.display = "flex";
+            });
+        });
     });
 };
 
