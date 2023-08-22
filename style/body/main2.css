@@ -54,3 +54,14 @@
     margin-bottom: 0;
     transition: margin-right 0.35s ease-in-out, margin-bottom 0.35s ease-in-out;
 }
+
+
+.x-button {
+    display: none;
+}
+
+.active {
+    display: flex;
+    margin-bottom: 90vh;
+    cursor: pointer;
+}

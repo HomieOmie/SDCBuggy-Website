@@ -95,6 +95,10 @@ function main2TeamLiClickEffect(){
             card.style.display = "none";
         });
 
+        const xButton = document.querySelector(".x-button");
+        
+        xButton.classList.toggle("active");
+
         main2TeamLi.classList.toggle("top-left-position");
 
         // Note: this can only be defined here as the class will not load until the toggle event happens above
