@@ -88,14 +88,13 @@ function main2HoverEffects() {
 };
 
 function main2TeamLiClickEffect(){
+    const xButton = document.querySelector(".x-button");
 
     main2Team.addEventListener("click", () => {
 
         main2TeamLiClick.forEach(card => {
             card.style.display = "none";
         });
-
-        const xButton = document.querySelector(".x-button");
         
         xButton.classList.toggle("active");
 
@@ -106,6 +105,22 @@ function main2TeamLiClickEffect(){
 
         main2TopLeftPosition.style.marginRight = "85%";
         main2TopLeftPosition.style.marginBottom = "40%";
+
+        xButton.addEventListener("click", () => {
+
+            xButton.classList.remove("active");
+
+            main2TopLeftPosition.style.marginRight = "0%";
+            main2TopLeftPosition.style.marginBottom = "0%";
+
+            setTimeout(() => {
+                main2TeamLi.classList.remove("top-left-position");
+            }, 350);
+            
+            main2TeamLiClick.forEach(card => {
+                card.style.display = "flex";
+            });
+        });
     });
 };
 
