@@ -1,7 +1,8 @@
 import { main2Team, main2Roles, main2Events, main2History, main2Alumni, 
         main2TeamHover, main2RolesHover, main2EventsHover, main2HistoryHover,
         main2AlumniHover, main2TeamLi, main2RolesLi, main2EventsLi,
-        main2HistoryLi, main2AlumniLi} from "./main2Constants.js";
+        main2HistoryLi, main2AlumniLi, main2TeamLiClick, main2RolesLiClick,
+        main2EventsLiClick, main2HistoryLiClick, main2AlumniLiClick} from "./main2Constants.js";
 
 function main2TeamHoverEffect() {
 
@@ -92,10 +93,9 @@ function main2TeamClickExpansionEffect() {
     
     main2Team.addEventListener("click", () => {
 
-        main2RolesLi.style.display = "none";
-        main2EventsLi.style.display = "none";
-        main2HistoryLi.style.display = "none";
-        main2AlumniLi.style.display = "none";
+        main2TeamLiClick.forEach(card => {
+            card.style.display = "none";
+        });
 
         main2TeamLi.classList.toggle("top-left-position");
 
@@ -107,10 +107,10 @@ function main2TeamClickExpansionEffect() {
     });
 
     main2Roles.addEventListener("click", () => {
-        main2TeamLi.style.display = "none";
-        main2EventsLi.style.display = "none";
-        main2HistoryLi.style.display = "none";
-        main2AlumniLi.style.display = "none";
+
+        main2RolesLiClick.forEach(card => {
+            card.style.display = "none";
+        });
 
         main2RolesLi.classList.toggle("top-left-position");
 
@@ -122,10 +122,10 @@ function main2TeamClickExpansionEffect() {
     });
 
     main2Events.addEventListener("click", () => {
-        main2TeamLi.style.display = "none";
-        main2RolesLi.style.display = "none";
-        main2HistoryLi.style.display = "none";
-        main2AlumniLi.style.display = "none";
+        
+        main2EventsLiClick.forEach(card => {
+            card.style.display = "none";
+        });
 
         main2EventsLi.classList.toggle("top-left-position");
 
@@ -137,10 +137,10 @@ function main2TeamClickExpansionEffect() {
     });
 
     main2History.addEventListener("click", () => {
-        main2TeamLi.style.display = "none";
-        main2RolesLi.style.display = "none";
-        main2EventsLi.style.display = "none";
-        main2AlumniLi.style.display = "none";
+        
+        main2HistoryLiClick.forEach(card => {
+            card.style.display = "none";
+        });
 
         main2HistoryLi.classList.toggle("top-left-position");
 
@@ -152,10 +152,10 @@ function main2TeamClickExpansionEffect() {
     });
 
     main2Alumni.addEventListener("click", () => {
-        main2TeamLi.style.display = "none";
-        main2RolesLi.style.display = "none";
-        main2EventsLi.style.display = "none";
-        main2HistoryLi.style.display = "none";
+        
+        main2AlumniLiClick.forEach(card => {
+            card.style.display = "none";
+        });
 
         main2AlumniLi.classList.toggle("top-left-position");
 

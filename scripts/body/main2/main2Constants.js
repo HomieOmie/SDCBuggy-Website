@@ -15,3 +15,9 @@ export const main2RolesLi = document.querySelector(".main2-roles-li");
 export const main2EventsLi = document.querySelector(".main2-events-li");
 export const main2HistoryLi = document.querySelector(".main2-history-li");
 export const main2AlumniLi = document.querySelector(".main2-alumni-li");
+
+export const main2TeamLiClick = [main2RolesLi, main2EventsLi, main2HistoryLi, main2AlumniLi];
+export const main2RolesLiClick = [main2TeamLi, main2EventsLi, main2HistoryLi, main2AlumniLi];
+export const main2EventsLiClick = [main2TeamLi, main2RolesLi, main2HistoryLi, main2AlumniLi];
+export const main2HistoryLiClick = [main2TeamLi, main2RolesLi, main2EventsLi, main2AlumniLi];
+export const main2AlumniLiClick = [main2TeamLi, main2RolesLi, main2EventsLi, main2HistoryLi];
