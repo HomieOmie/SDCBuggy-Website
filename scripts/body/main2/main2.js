@@ -1,4 +1,3 @@
-/// TODO: Try to see if new xButton code can be refactored
 
 import { main2Team, main2Roles, main2Events, main2History, main2Alumni, 
         main2TeamHover, main2RolesHover, main2EventsHover, main2HistoryHover,
