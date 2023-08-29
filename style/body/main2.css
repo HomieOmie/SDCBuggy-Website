@@ -3,7 +3,7 @@
 .main2 {
     position: relative;
     height: 100vh;
-    background-color: blueviolet;
+    background-color: #000002;
     display: flex;
     justify-content: center;
     align-items: center;
