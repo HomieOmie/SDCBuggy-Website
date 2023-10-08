@@ -2,6 +2,7 @@ import { main1Section, malice_front_sunny, bane_front_hill2,
         design_comp_group_12, vice_side_misty, bow_to_bane,
         vice_hill5_incoming, slides} from "./main1Constants.js";
 
+// TODO: update this to have smooth image transitions; fix images as needed
 function main1ImageSlideshow() {
     document.addEventListener("DOMContentLoaded", function () {
 
