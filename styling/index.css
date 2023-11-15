@@ -1,7 +1,5 @@
-/* Import external stylesheet */
 @import url("fight.css");
 
-/* Global styles */
 html {
     background-color: white;
 }
@@ -14,7 +12,6 @@ body {
     margin: 0;
 }
 
-/* Header styles */
 header {
     background-color: rgb(215, 215, 215);
     margin-top: none;
@@ -30,30 +27,6 @@ header {
     margin-left: 2vw;
 }
 
-#records {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-}
-
-#records > div:not(:last-child) {
-    margin-bottom: -2vh;
-}
-
-.record {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.record > div:not(:last-child) {
-    margin-right: 3vw;
-}
-
-.record > div > p {
-    font-size: 1.5vw;
-}
-
-/* Navigation styles */
 nav {
     margin-right: 4vw;
 }
@@ -74,6 +47,29 @@ nav > ul > li > a {
     font-size: 5vh;
 }
 
+records {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+records > record:not(:last-child) {
+    margin-bottom: -5vh;
+}
+
+records > record {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+records > record > div:not(:last-child) {
+    margin-right: 3vw;
+}
+
+records > record > div > p {
+    font-size: 2vw;
+}
+
 main {
     height: 87vh;
     display: flex;
@@ -87,7 +83,101 @@ main > p {
     font-size: 12vh;
 }
 
-#carrot {
+main #carrot {
     height: 4vh;
     width: auto;
+}
+
+leads {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+leads > p {
+    margin-top: -2vh;
+    padding-top: 0;
+    margin-bottom: -2vh;
+    font-size: 8vh;
+}
+
+#row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2vh;
+}
+
+#row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2vh;
+}
+
+#row3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card {
+    width: 10vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 1vw;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+#row1 .card:first-child {
+    margin-right: -40vw;
+}
+
+#row2 > div:not(:last-child) {
+    margin-right: 10vw;
+}
+
+#row3 > div:not(:last-child) {
+    margin-right: 10vw;
+}
+
+.card > p {
+    font-size:3.1vh;
+}
+
+.card > p:not(:last-child) {
+    margin-top: .5vh;
+    margin-bottom: .6vh;
+}
+
+.card > p:not(:first-child) {
+    margin-top: .6vh;
+    margin-bottom: .5vh;
+}
+
+.card-circle {
+    height: 17vh;
+    width: auto;
+}
+
+#carrot-up,
+#carrot-down {
+    height: 4vh;
+    width: auto;
+}
+
+#carrot-up {
+    margin-top: 0;
+}
+
+#carrot-up {
+    transform: scaleY(-1); /* Flip the carrot vertically */
 }
