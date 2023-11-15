@@ -100,7 +100,7 @@ leads > p {
     margin-top: -2vh;
     padding-top: 0;
     margin-bottom: -2vh;
-    font-size: 8vh;
+    font-size: 7vh;
 }
 
 #row1 {
@@ -168,16 +168,58 @@ leads > p {
     width: auto;
 }
 
-#carrot-up,
-#carrot-down {
+.carrot-up,
+.carrot-down {
     height: 4vh;
     width: auto;
 }
 
-#carrot-up {
+.carrot-up {
     margin-top: 0;
 }
 
-#carrot-up {
+.carrot-up {
     transform: scaleY(-1); /* Flip the carrot vertically */
+}
+
+roles {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+roles > p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 7vh;
+}
+
+roles > div {
+    width: 99vw;
+    height: 80vh;
+    margin-bottom: 1vh;
+}
+
+#role-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.role-card {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(181, 181, 181);
+    height: 80vh;
+    width: 32vw;
+}
+
+.role-card > p {
+    font-size: 7vh;
 }
