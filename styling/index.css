@@ -1,171 +1,20 @@
-@import url("fight.css");
+@import url(fight.css);
 
-html {
-    background-color: white;
+#sdc-logo {
+    height: 10vh;
+    width: auto;
 }
 
 p {
     font-family: 'sdc-font';
 }
 
+a {
+    font-family: 'sdc-logo';
+}
+
 body {
     margin: 0;
-}
-
-header {
-    background-color: rgb(215, 215, 215);
-    margin-top: none;
-    height: 13vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#sdc-logo {
-    height: 11vh;
-    width: auto;
-    margin-left: 2vw;
-}
-
-nav {
-    margin-right: 4vw;
-}
-
-nav > ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-nav > ul > li:not(:last-child) {
-    margin-right: 15vh;
-}
-
-nav > ul > li > a {
-    font-family: 'sdc-font';
-    font-size: 5vh;
-}
-
-records {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-}
-
-records > record:not(:last-child) {
-    margin-bottom: -5vh;
-}
-
-records > record {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-records > record > div:not(:last-child) {
-    margin-right: 3vw;
-}
-
-records > record > div > p {
-    font-size: 2vw;
-}
-
-main {
-    height: 87vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-main > p {
-    margin-top: 30.5vh;
-    font-size: 12vh;
-}
-
-main #carrot {
-    height: 4vh;
-    width: auto;
-}
-
-leads {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-leads > p {
-    margin-top: -2vh;
-    padding-top: 0;
-    margin-bottom: -2vh;
-    font-size: 7vh;
-}
-
-#row1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 2vh;
-}
-
-#row2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 2vh;
-}
-
-#row3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.card {
-    width: 10vw;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-right: 1vw;
-}
-
-.card:last-child {
-    margin-right: 0;
-}
-
-#row1 .card:first-child {
-    margin-right: -40vw;
-}
-
-#row2 > div:not(:last-child) {
-    margin-right: 10vw;
-}
-
-#row3 > div:not(:last-child) {
-    margin-right: 10vw;
-}
-
-.card > p {
-    font-size:3.1vh;
-}
-
-.card > p:not(:last-child) {
-    margin-top: .5vh;
-    margin-bottom: .6vh;
-}
-
-.card > p:not(:first-child) {
-    margin-top: .6vh;
-    margin-bottom: .5vh;
-}
-
-.card-circle {
-    height: 17vh;
-    width: auto;
 }
 
 .carrot-up,
@@ -175,14 +24,91 @@ leads > p {
 }
 
 .carrot-up {
-    margin-top: 0;
+    transform: scaleY(-1);
 }
 
-.carrot-up {
-    transform: scaleY(-1); /* Flip the carrot vertically */
+
+/* Header Styling */
+header {
+    background-color: rgb(186, 186, 186);
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 7vh;
+    padding-right: 7vh;
+}
+
+records {
+    display: flex;
+    flex-direction: column;
+}
+
+record {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+record > div:not(:last-child) {
+    margin-right: 5vh;
+}
+
+records > record:not(:last-child) {
+    margin-bottom: -2.5vh;
+}
+
+record > div > p {
+    font-size: 3vh;
+}
+
+header > nav > ul {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > nav > ul > li:not(:last-child) {
+    margin-right: 7vw;
+}
+
+header > nav > ul > li > a {
+    font-family: 'sdc-font';
+    font-size: 5vh;
+}
+
+/* Main styling */
+main {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+main > p {
+    margin-top: 35vh;
+    font-size: 10vh;
+}
+
+main > div {
+    margin-bottom: 2vh;
+}
+
+leads {
+    height: 100vh;
 }
 
 roles {
+    height: 100vh;
+}
+
+/* Team Leads section styling */
+leads {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -190,36 +116,68 @@ roles {
     align-items: center;
 }
 
-roles > p {
-    margin-top: 0;
+leads > p {
+    margin-top: -8vh;
     margin-bottom: 0;
     font-size: 7vh;
 }
 
-roles > div {
-    width: 99vw;
-    height: 80vh;
-    margin-bottom: 1vh;
+.card-circle {
+    height: 19vh;
+    width: auto;
 }
 
-#role-cards {
+.card {
+    width: 10vw;
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-}
-
-.role-card {
-    border-radius: 12px;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: rgb(181, 181, 181);
-    height: 80vh;
-    width: 32vw;
+    text-align: center;
 }
 
-.role-card > p {
-    font-size: 7vh;
+.card > p {
+    font-size: 2.7vh;
+}
+
+.card > p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1.5vh;
+}
+
+#row1 > div:not(:last-child) {
+    margin-right: 10vw;
+}
+
+#row2 > div:not(:last-child) {
+    margin-right: 8vw;
+}
+
+#row3 > div:not(:last-child) {
+    margin-right: 8vw;
+}
+
+#row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 3vh;
+}
+
+#row3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#rows {
+    margin-top: -8vh;
+    margin-bottom: -5vh;
 }
