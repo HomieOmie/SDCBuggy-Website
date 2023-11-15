@@ -1,0 +1,93 @@
+/* Import external stylesheet */
+@import url("fight.css");
+
+/* Global styles */
+html {
+    background-color: white;
+}
+
+p {
+    font-family: 'sdc-font';
+}
+
+body {
+    margin: 0;
+}
+
+/* Header styles */
+header {
+    background-color: rgb(215, 215, 215);
+    margin-top: none;
+    height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sdc-logo {
+    height: 11vh;
+    width: auto;
+    margin-left: 2vw;
+}
+
+#records {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+#records > div:not(:last-child) {
+    margin-bottom: -2vh;
+}
+
+.record {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.record > div:not(:last-child) {
+    margin-right: 3vw;
+}
+
+.record > div > p {
+    font-size: 1.5vw;
+}
+
+/* Navigation styles */
+nav {
+    margin-right: 4vw;
+}
+
+nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav > ul > li:not(:last-child) {
+    margin-right: 15vh;
+}
+
+nav > ul > li > a {
+    font-family: 'sdc-font';
+    font-size: 5vh;
+}
+
+main {
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main > p {
+    margin-top: 30.5vh;
+    font-size: 12vh;
+}
+
+#carrot {
+    height: 4vh;
+    width: auto;
+}
