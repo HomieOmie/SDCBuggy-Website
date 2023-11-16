@@ -1,4 +1,4 @@
-join {
+#join {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -6,13 +6,13 @@ join {
     align-items: center;
 }
 
-join > div {
+#join > div {
     border-radius: 4vh;
     background-color: rgb(122, 122, 122);
     margin-bottom: 47vh;
 }
 
-join > div > p {
+#join > div > p {
     margin-top: 2vh;
     margin-bottom: 2vh;
     margin-right: 4vh;

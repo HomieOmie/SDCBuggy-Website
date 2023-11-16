@@ -1,4 +1,4 @@
-main {
+#main {
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -7,11 +7,15 @@ main {
     margin-bottom: 0;
 }
 
-main > p {
+#main > p {
     margin-top: 35vh;
     font-size: 10vh;
 }
 
-main > div {
+#main > div {
+    margin-bottom: 2vh;
+}
+
+#main > a > .carrot-down {
     margin-bottom: 2vh;
 }

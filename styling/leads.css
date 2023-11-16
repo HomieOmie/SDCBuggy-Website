@@ -1,4 +1,4 @@
-leads {
+#leads {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -6,7 +6,7 @@ leads {
     align-items: center;
 }
 
-leads > p {
+#leads > p {
     margin-top: -8vh;
     margin-bottom: 0;
     font-size: 7vh;

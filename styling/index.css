@@ -10,6 +10,10 @@
     width: auto;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 p {
     font-family: 'sdc-font';
 }

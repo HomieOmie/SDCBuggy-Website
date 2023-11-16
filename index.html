@@ -10,11 +10,13 @@
     <title> SDC Buggy | Home </title>
 
     <link rel = "stylesheet" href = "styling/index.css" >
+
+    <script src="scripts/index.js" defer></script>
     
 </head>
 
 <body>
-    <header>
+    <section id = "header">
 
         <div>
             <img id="sdc-logo" src="content/sdc-buggy-logo-new.svg">
@@ -38,15 +40,15 @@
                 <li><a>Join</a></li>
             </ul>
         </nav>
-    </header>
+    </section>
 
-    <main>
+    <section id = "main">
         <p>SDC READY???</p>
-        <div><a><img class="carrot-down" src="content/carrot.svg"></a></div>
-    </main>
+        <a href = "#leads"><img class="carrot-down" src="content/carrot.svg"></a>
+    </section>
 
-    <leads>
-        <a><img class="carrot-up" src="content/carrot.svg"></a>
+    <section id = "leads">
+        <a href = "#header"><img class="carrot-up" src="content/carrot.svg"></a>
         
         <p>RaCeDay 24 Team LeaDS</p>
         
@@ -130,11 +132,11 @@
             </div>
         </div>
 
-        <a><img class="carrot-down" src="content/carrot.svg"></a>
-    </leads>
+        <a href = "#roles"><img class="carrot-down" src="content/carrot.svg"></a>
+    </section>
 
-    <roles>
-        <a><img class="carrot-up" src="content/carrot.svg"></a>
+    <section id = "roles">
+        <a href = "#leads"><img class="carrot-up" src="content/carrot.svg"></a>
 
         <p>RoleS</p>
 
@@ -152,14 +154,14 @@
             </div>
         </div>
 
-        <a><img class="carrot-down" src="content/carrot.svg"></a>
-    </roles>
+        <a href = "#join"><img class="carrot-down" src="content/carrot.svg"></a>
+    </section>
 
-    <join>
-        <a><img class="carrot-up" src="content/carrot.svg"></a>
+    <section id = "join">
+        <a href = "#roles"><img class="carrot-up" src="content/carrot.svg"></a>
 
         <div><p>Join!</p></div>
-    </join>
+    </section>
 
 
     <footer>
