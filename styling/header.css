@@ -1,0 +1,50 @@
+header {
+    background-color: rgb(186, 186, 186);
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 7vh;
+    padding-right: 7vh;
+}
+
+records {
+    display: flex;
+    flex-direction: column;
+}
+
+record {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+record > div:not(:last-child) {
+    margin-right: 5vh;
+}
+
+records > record:not(:last-child) {
+    margin-bottom: -2.5vh;
+}
+
+record > div > p {
+    font-size: 3vh;
+}
+
+header > nav > ul {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > nav > ul > li:not(:last-child) {
+    margin-right: 7vw;
+}
+
+header > nav > ul > li > a {
+    font-family: 'sdc-font';
+    font-size: 5vh;
+}

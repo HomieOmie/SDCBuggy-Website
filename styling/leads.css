@@ -1,0 +1,73 @@
+leads {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+leads > p {
+    margin-top: -8vh;
+    margin-bottom: 0;
+    font-size: 7vh;
+}
+
+.card-circle {
+    height: 19vh;
+    width: auto;
+}
+
+.card {
+    width: 10vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card > p {
+    font-size: 2.7vh;
+}
+
+.card > p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1.5vh;
+}
+
+#row1 > div:not(:last-child) {
+    margin-right: 10vw;
+}
+
+#row2 > div:not(:last-child) {
+    margin-right: 8vw;
+}
+
+#row3 > div:not(:last-child) {
+    margin-right: 8vw;
+}
+
+#row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 3vh;
+}
+
+#row3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#rows {
+    margin-top: -8vh;
+    margin-bottom: -5vh;
+}
