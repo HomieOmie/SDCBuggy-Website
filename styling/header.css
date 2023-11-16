@@ -45,6 +45,11 @@ record > div > p {
 }
 
 #header > nav > ul > li > a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#header > nav > ul > li > a {
     font-family: 'sdc-font';
     font-size: 5vh;
 }
