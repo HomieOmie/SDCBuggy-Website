@@ -99,14 +99,6 @@ main > div {
     margin-bottom: 2vh;
 }
 
-leads {
-    height: 100vh;
-}
-
-roles {
-    height: 100vh;
-}
-
 /* Team Leads section styling */
 leads {
     height: 100vh;
@@ -180,4 +172,67 @@ leads > p {
 #rows {
     margin-top: -8vh;
     margin-bottom: -5vh;
+}
+
+/* Roles secton styling */
+roles {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+roles > p {
+    margin-top: -2vh;
+    margin-bottom: -1vh;
+    font-size: 8vh;
+}
+
+#role-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+    width: 98vw;
+}
+
+.role-card {
+    height: 80vh;
+    width: 32vw;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(181, 181, 181);
+}
+
+.role-card > p {
+    font-size: 10vh;
+}
+
+/* Join section styling */
+join {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+join > div {
+    border-radius: 4vh;
+    background-color: rgb(122, 122, 122);
+    margin-bottom: 47vh;
+    
+}
+
+join > div > p {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-right: 4vh;
+    margin-left: 4vh;
+    font-size: 8vh;
 }
