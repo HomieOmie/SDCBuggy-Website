@@ -19,6 +19,12 @@ header > logo > img {
     width: auto;
 }
 
+@media (max-width: 782px) { /* Gets rid of the record if screen width is too small */
+    header > records {
+        display: none;
+    }
+}
+
 header > records > ul {
     padding: 0; /* Removed unecessary padding */
     margin-top: 0;
