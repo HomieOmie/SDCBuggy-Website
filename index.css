@@ -9,15 +9,20 @@ header {
     display: flex; /* Makes items inline-horizontal */
     justify-content: space-between; /* Spaces the contents */
     align-items: center; /* Aligns items vertically to the center */
+    padding-top: 1vh; /* Adding some spacing on top of header */
+    padding-bottom: .5vh; /* Adding some spacing on the bottom of the header */
 }
 
 header > logo > img {
-    height: 15vh; /* Sizing the SVG logo */
+    margin-left: 2vw;
+    height: 13vh; /* Sizing the SVG logo */
     width: auto;
 }
 
 header > records > ul {
     padding: 0; /* Removed unecessary padding */
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 header > records > ul > ul {
@@ -27,14 +32,52 @@ header > records > ul > ul {
     padding: 0; /* Removed unnecessary padding */
 }
 
+header > records > ul > ul:last-child {
+    margin-top: 2vh;
+}
+
+header > records > ul > ul > li:first-child {
+    margin-right: 3vw;
+}
+
 header > records > ul > ul > li > p {
-    font-size: 2.5vh;
+    font-size: 3.5vh;
     font-family: 'sdc';
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header > nav {
+    margin-right: 4vw;
 }
 
 header > nav > ul {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header > nav > ul > li:not(:last-child) {
+    margin-right: 5vw;
+}
+
+header > nav > ul > li > a {
+    display: flex;
+    flex-direction: row;
+    font-size: 5vh;
+    font-family: 'sdc';
+}
+
+header > nav > ul > li > a > p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header > nav > ul > li > a > p:first-child {
+    margin-right: 1.5vh;
 }
 
 
