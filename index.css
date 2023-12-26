@@ -10,7 +10,6 @@ header {
     justify-content: space-between; /* Spaces the contents */
     align-items: center; /* Aligns items vertically to the center */
     padding-top: 1vh; /* Adding some spacing on top of header */
-    padding-bottom: .5vh; /* Adding some spacing on the bottom of the header */
 }
 
 header > logo > img {
@@ -53,7 +52,7 @@ header > records > ul > ul > li > p {
     margin-bottom: 0;
 }
 
-@media (max-width: 510px) { /* Gets rid of standard nav view if screen is too small */
+@media (max-width: 522px) { /* Gets rid of standard nav view if screen is too small */
     header > nav {
         display: none;
     }
@@ -125,10 +124,47 @@ header > hamburger > .bar3 {
     transform: translate(0, -11px) rotate(45deg);
 }
 
-@media (min-width: 511px) { /* The hamburger icon will only display when screen is small enough */
+@media (min-width: 523px) { /* The hamburger icon will only display when screen is small enough */
+    header {
+        flex-wrap: wrap;
+    }
+    
     header > hamburger {
         display: none;
     }
+}
+
+.mobilemenu {
+    display: none;
+    background-color: #333;
+    color: white;
+    width:100%;
+    top: 100%;
+    left: 0;
+    position: relative;
+}
+
+.mobilemenu ul {
+    list-style-type: none;
+    width: 100%;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobilemenu ul li {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.mobilemenu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
 }
 
 
