@@ -167,6 +167,41 @@ header > hamburger > .bar3 {
     font-size: 18px;
 }
 
+main {
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main > div {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+}
+
+main > div > h1 {
+    font-size: 10vh;
+    font-family: 'sdc';
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+main > div > h1:not(:last-child) {
+    margin-right: 2.5vh;
+}
+
+main > img {
+    height: 5vh;
+    width: auto;
+    margin-bottom: 1vh;
+}
+
 
 
 
