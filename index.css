@@ -261,7 +261,7 @@ leads > leadcards {
 }
 
 .r1 .card:not(:last-child) {
-    margin-right: 10vw;
+    margin-right: 5vw;
 }
 
 .r2 {
@@ -290,7 +290,21 @@ leads > leadcards {
     align-items: center;
     padding: 1vh 2vh 1vh 2vh;
     border-radius: 2vh;
-    transition: background-color 0.2s ease;
+    transition: width 1s ease, min-height 1s ease, background-color 0.5s ease;
+    position: relative;
+    overflow: hidden;
+    margin-right: auto;
+}
+
+.card.expanded {
+    width: 92vw;
+    min-height: 76vh;
+    margin-right: 0vh;
+    background-color: #33333377;
+}
+
+.card.hidden {
+    display: none;
 }
 
 .card:hover {
@@ -309,6 +323,15 @@ leads > leadcards {
 
 .card > p:last-child {
     margin-top: 1vh;
+}
+
+.close {
+    display: none;
+    position: absolute;
+    right: 0;
+    height: 6vh;
+    width: auto;
+    cursor: pointer;
 }
 
 
