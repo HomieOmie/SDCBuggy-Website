@@ -288,7 +288,7 @@ leads > leadcards {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1vh 2vh 1vh 2vh;
+    padding: 1vh 2vh 0vh 2vh;
     border-radius: 2vh;
     transition: width 1s ease, min-height 1s ease, background-color 0.5s ease;
     position: relative;
@@ -313,12 +313,16 @@ leads > leadcards {
 
 .card > p {
     font-family: 'sora-regular';
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
-.card > p:first-child {
-    margin-bottom: 1vh;
+.name {
+    margin-top: 0vh;
+    margin-bottom: .75vh;
+}
+
+.title {
+    margin-top: .75vh;
+    margin-bottom: 0vh;
 }
 
 .card > p:last-child {
@@ -332,6 +336,17 @@ leads > leadcards {
     height: 6vh;
     width: auto;
     cursor: pointer;
+}
+
+.info {
+    padding-top: 4vh;
+    font-size: 3vh;
+    font-family: 'sora-regular';
+}
+
+.info {
+    display: none;
+    font-size: 3vh;
 }
 
 

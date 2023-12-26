@@ -7,3 +7,8 @@
     font-family: 'sora-regular';
     src: url("static/Sora-Regular.ttf")
 }
+
+@font-face {
+    font-family: 'sora-semibold';
+    src: url("static/Sora-SemiBold.ttf");
+}
