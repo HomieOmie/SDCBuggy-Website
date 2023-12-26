@@ -288,6 +288,13 @@ leads > leadcards {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1vh 2vh 1vh 2vh;
+    border-radius: 2vh;
+    transition: background-color 0.2s ease;
+}
+
+.card:hover {
+    background-color: #33333377;
 }
 
 .card > p {
