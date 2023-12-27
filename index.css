@@ -301,7 +301,7 @@ leads > leadcards {
     align-items: center;
     padding: 1vh 2vh 0vh 2vh;
     border-radius: 2vh;
-    transition: width 1s ease, min-height 1s ease, background-color 0.5s ease;
+    transition: width .5s ease, min-height .5s ease, background-color 0.5s ease;
     position: relative;
     overflow: hidden;
     margin-right: auto;
@@ -358,6 +358,37 @@ leads > leadcards {
 .info {
     display: none;
     font-size: 3vh;
+}
+
+.links {
+    list-style-type: none;
+    display: none;
+    flex-direction: row;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    min-width: 25vw;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4vh;
+}
+
+.links > li:not(:last-child) {
+    margin-right: 1vh;
+}
+
+.links > li:not(:first-child) {
+    margin-left: 1vh;
+}
+
+#phone {
+    height: 6vh;
+    width: auto;
+}
+
+#email {
+    height: 6vh;
+    width: auto;
 }
 
 

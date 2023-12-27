@@ -17,11 +17,13 @@ document.addEventListener('DOMContentLoaded', function () {
             })
 
             const closeButton = card.querySelector('.close');
+            console.log(closeButton);
             const circle = card.querySelector('.circle');
             const pTags = card.querySelectorAll('p');
             const name = pTags[0];
             const title = pTags[1];
             const info = card.querySelector('.info');
+            const links = card.querySelector('.links');
 
             card.style.width = '92vw';
             card.style.minHeight = '76vh';
@@ -36,6 +38,8 @@ document.addEventListener('DOMContentLoaded', function () {
             circle.style.width = '30vh';
 
             info.style.display = 'flex';
+
+            links.style.display = 'flex';
 
             closeButton.style.display = `flex`;
 
@@ -54,6 +58,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 circle.style.width = '16vh';
 
                 info.style.display = 'none';
+
+                links.style.display = 'none';
 
                 closeButton.style.display = 'none';
 
