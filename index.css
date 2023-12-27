@@ -250,8 +250,19 @@ leads > leadcards {
 }
 
 .circle {
+    display: flex;
     height: 16vh;
-    width: auto;
+    width: 16vh;
+    background-image: url('profile_images/blank.jpg');
+    background-size: cover;
+    border-radius: 50%;
+}
+
+#om {
+    background-image: url('profile_images/IMG_2186.jpg');
+    background-size: 150%;
+    border-radius: 50%;
+    background-position: 30%;
 }
 
 .r1 {

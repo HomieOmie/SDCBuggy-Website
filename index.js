@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title.style.fontSize = '4vh';
             title.style.fontFamily = 'sora-semibold';
             circle.style.height = '30vh';
+            circle.style.width = '30vh';
 
             info.style.display = 'flex';
 
@@ -50,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 title.style.fontSize = '2vh';
 
                 circle.style.height = '16vh';
+                circle.style.width = '16vh';
 
                 info.style.display = 'none';
 
