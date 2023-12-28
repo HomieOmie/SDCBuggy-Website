@@ -391,5 +391,16 @@ leads > leadcards {
     width: auto;
 }
 
+roles {
+    min-height: 100vh;
+    max-height: none;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 
