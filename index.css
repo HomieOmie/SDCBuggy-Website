@@ -502,10 +502,19 @@ roles > h1 {
     height: 100%;
     width: 50%;
     display: flex;
+    border-radius: 0vh 3vh 3vh 0vh;
+}
+
+#pusher {
     background-image: url("media/pusher-card-image.jpg");
     background-size: cover;
     background-position: center;
-    border-radius: 0vh 3vh 3vh 0vh;
+}
+
+#driver {
+    background-image: url("media/driver-card-image.jpeg");
+    background-size: cover;
+    background-position: center;
 }
 
 .blurb {
