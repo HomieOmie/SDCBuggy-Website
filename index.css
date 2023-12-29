@@ -4,6 +4,10 @@ body {
     margin: 0;
 }
 
+html {
+    scroll-snap-type: y mandatory;
+}
+
 header {
     background-color: grey;
     display: flex; /* Makes items inline-horizontal */
