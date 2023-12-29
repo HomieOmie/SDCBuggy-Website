@@ -453,6 +453,12 @@ roles > h1 {
     background-color: #6f6f6f;
 }
 
+.titlecontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .roletitle {
     font-family: 'sdc';
     font-size: 10vh;

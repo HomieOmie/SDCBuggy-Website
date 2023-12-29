@@ -90,11 +90,14 @@ document.addEventListener('DOMContentLoaded', function () {
             
             const closeButton = card.querySelector('.closeroles');
             const cardContainer = card.querySelector('.rolecontainer');
+            const titleContainer = card.querySelector('.titlecontainer');
             
             card.style.width = "100%";
 
             cardContainer.style.justifyContent = "space-between";
             cardContainer.style.alignItems = 'flex-start';
+
+            titleContainer.style.justifyContent = "space-between";
 
             closeButton.style.display = `flex`;
 
@@ -104,6 +107,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 cardContainer.style.justifyContent = "center";
                 cardContainer.style.alignItems = "center";
+
+                titleContainer.style.justifyContent = "center";
 
                 closeButton.style.display = "none";
 
