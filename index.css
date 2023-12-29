@@ -429,12 +429,13 @@ roles > h1 {
     align-items: center;
 }
 
-.rolecardslist {
+.rolecardslistitem {
     width: 32%;
     min-height: 76vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .rolecontainer {
@@ -445,11 +446,34 @@ roles > h1 {
     justify-content: center;
     align-items: center;
     border-radius: 3vh;
+    transition: background-color 0.4s ease;
+}
+
+.rolecontainer:hover {
+    background-color: #6f6f6f;
 }
 
 .roletitle {
     font-family: 'sdc';
     font-size: 10vh;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1vh;
+}
+
+.closeroles {
+    display: none;
+    height: 6vh;
+    width: auto;
+    margin-right: .5vh;
+    margin-top: .5vh;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.closeroles:hover {
+    height: 6.5vh;
+    width: auto;
 }
 
 

@@ -1,3 +1,5 @@
+
+// For the hamburger menu for smaller screen sizes
 function myFunction() {
     var hamburger = document.querySelector('hamburger');
     hamburger.classList.toggle("change");
@@ -6,6 +8,7 @@ function myFunction() {
     mobileMenu.style.display = (mobileMenu.style.display === 'flex') ? 'none' : 'flex';
 }
 
+// For the roles
 document.addEventListener('DOMContentLoaded', function () {
     const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
@@ -61,6 +64,48 @@ document.addEventListener('DOMContentLoaded', function () {
                 links.style.display = 'none';
 
                 closeButton.style.display = 'none';
+
+                cards.forEach(otherCard => {
+                    otherCard.style.display = 'flex';
+                });
+
+                event.stopPropagation();
+            })
+        })
+    })
+})
+
+
+// For the roles cards section
+document.addEventListener('DOMContentLoaded', function () {
+    const cards = document.querySelectorAll('.rolecardslistitem');
+    
+    cards.forEach(card => {
+        card.addEventListener('click', function () {
+            cards.forEach(otherCard => {
+                if (otherCard !== card) {
+                    otherCard.style.display = 'none';
+                }
+            })
+            
+            const closeButton = card.querySelector('.closeroles');
+            const cardContainer = card.querySelector('.rolecontainer');
+            
+            card.style.width = "100%";
+
+            cardContainer.style.justifyContent = "space-between";
+            cardContainer.style.alignItems = 'flex-start';
+
+            closeButton.style.display = `flex`;
+
+            closeButton.addEventListener('click', function (event) {
+
+                card.style.width = "32%";
+
+                cardContainer.style.justifyContent = "center";
+                cardContainer.style.alignItems = "center";
+
+                closeButton.style.display = "none";
 
                 cards.forEach(otherCard => {
                     otherCard.style.display = 'flex';
