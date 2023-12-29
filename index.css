@@ -204,6 +204,7 @@ main > div > h1:not(:last-child) {
     height: 5vh;
     width: auto;
     margin-bottom: 1vh;
+    cursor: pointer;
 }
 
 .carrot-up {
@@ -211,6 +212,7 @@ main > div > h1:not(:last-child) {
     width: auto;
     margin-top: 1vh;
     transform: rotate(180deg);
+    cursor: pointer;
 }
 
 leads {

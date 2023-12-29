@@ -75,7 +75,6 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 })
 
-
 // For the roles cards section
 document.addEventListener('DOMContentLoaded', function () {
     const cards = document.querySelectorAll('.rolecardslistitem');
@@ -124,3 +123,13 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     })
 })
+
+// For scrolling sections into view
+function scrollIntoMainView(sectionName) {
+    const section = document.getElementById(sectionName);
+    if (section) {
+        section.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+}
