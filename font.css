@@ -12,3 +12,8 @@
     font-family: 'sora-semibold';
     src: url("static/Sora-SemiBold.ttf");
 }
+
+@font-face {
+    font-family: 'sora-medium';
+    src: url("static/Sora-Medium.ttf");
+}

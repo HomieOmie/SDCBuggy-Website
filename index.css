@@ -443,6 +443,7 @@ roles > h1 {
     min-height: 76vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 3vh;
@@ -480,6 +481,38 @@ roles > h1 {
 .closeroles:hover {
     height: 6.5vh;
     width: auto;
+}
+
+.contentcontainer {
+    height: 60vh;
+    width: 95%;
+    margin-bottom: 2vh;
+    display: none;
+    border-radius: 3vh;
+    background-color: aliceblue;
+}
+
+.contentinfo {
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+
+.contentimage {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    background-image: url("media/pusher-card-image.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 0vh 3vh 3vh 0vh;
+}
+
+.blurb {
+    font-family: 'sora-medium';
+    font-size: 3vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
 }
 
 
