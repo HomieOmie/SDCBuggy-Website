@@ -75,6 +75,10 @@ header > nav > ul {
     margin-bottom: 0;
 }
 
+header > nav > ul > li {
+    cursor: pointer;
+}
+
 header > nav > ul > li:not(:last-child) {
     margin-right: 5vw;
 }
@@ -84,6 +88,11 @@ header > nav > ul > li > a {
     flex-direction: row;
     font-size: 5vh;
     font-family: 'sdc';
+    transition: 0.25s ease-in-out;
+}
+
+header > nav > ul > li > a:hover {
+    font-size: 6vh;
 }
 
 header > nav > ul > li > a > p {
