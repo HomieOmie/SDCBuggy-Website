@@ -16,7 +16,7 @@ header {
     padding-top: 1vh; /* Adding some spacing on top of header */
 }
 
-header > logo > img {
+header > logo > a > img {
     margin-left: 2vw;
     height: 13vh; /* Sizing the SVG logo */
     width: auto;
