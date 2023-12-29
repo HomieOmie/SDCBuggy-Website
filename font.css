@@ -17,3 +17,8 @@
     font-family: 'sora-medium';
     src: url("static/Sora-Medium.ttf");
 }
+
+@font-face {
+    font-family: 'sora-bold';
+    src: url("static/Sora-Bold.ttf");
+}

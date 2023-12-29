@@ -5,7 +5,7 @@ body {
 }
 
 html {
-    /* scroll-snap-type: y mandatory; */
+    scroll-snap-type: y mandatory;
 }
 
 header {
@@ -559,7 +559,7 @@ join {
 .joinbutton {
     height: 15vh;
     width: 20vw;
-    margin-bottom: 48vh;
+    margin-bottom: 55vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -579,6 +579,37 @@ join {
 .footer-image {
     height: 10vh;
     width: auto;
+}
+
+footer {
+    background-color: #898989;
+}
+
+.designer-credit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.designer-credit > p {
+    font-family: 'sora-bold';
+    font-size: 2.25vh;
+}
+
+.designer-credit > p:first-child {
+    margin-right: 2vh;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
