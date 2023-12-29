@@ -556,6 +556,11 @@ join {
     align-items: center;
 }
 
+.joinlink {
+    text-decoration: none;
+    color: #000000;
+}
+
 .joinbutton {
     height: 15vh;
     width: 20vw;
