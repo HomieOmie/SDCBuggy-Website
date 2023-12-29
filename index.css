@@ -31,25 +31,30 @@ header > logo > img {
 header > records > ul {
     padding: 0; /* Removed unecessary padding */
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 1.5vh;
 }
 
-header > records > ul > ul {
+header > records > ul > a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header > records > ul > a > ul {
     display: flex; /* Makes [sex record] inline */
     justify-content: space-between; /* Adds some space between sex and record*/
     list-style-type: none; /* Gets rid of bullets */
     padding: 0; /* Removed unnecessary padding */
 }
 
-header > records > ul > ul:last-child {
+header > records > ul > a > ul:last-child {
     margin-top: 2vh;
 }
 
-header > records > ul > ul > li:first-child {
+header > records > ul > a > ul > li:first-child {
     margin-right: 3vw;
 }
 
-header > records > ul > ul > li > p {
+header > records > ul > a > ul > li > p {
     font-size: 3.5vh;
     font-family: 'sdc';
     margin-top: 0;
