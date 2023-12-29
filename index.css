@@ -517,6 +517,12 @@ roles > h1 {
     background-position: center;
 }
 
+#mechanic {
+    background-image: url("media/mechanic-card-image.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 .blurb {
     font-family: 'sora-medium';
     font-size: 3vh;
