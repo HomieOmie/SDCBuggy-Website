@@ -103,7 +103,7 @@ header > hamburger > .bar1, .bar2, .bar3 {
     background-color: #000000;
     margin: 6px 0;
     transition: 0.4s;
-    border-radius: 12vw;
+    border-radius: 3vh;
 }
 
 header > hamburger > .bar1 {
@@ -400,6 +400,56 @@ roles {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+roles > h1 {
+    font-size: 8vh;
+    font-family: 'sdc';
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cardscontainer {
+    min-height: 76vh;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rolecards {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    min-height: 76vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rolecardslist {
+    width: 32%;
+    min-height: 76vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rolecontainer {
+    background-color: #898989;
+    min-height: 76vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3vh;
+}
+
+.roletitle {
+    font-family: 'sdc';
+    font-size: 10vh;
 }
 
 

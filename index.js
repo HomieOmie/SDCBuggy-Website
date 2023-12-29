@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
             })
 
             const closeButton = card.querySelector('.close');
-            console.log(closeButton);
             const circle = card.querySelector('.circle');
             const pTags = card.querySelectorAll('p');
             const name = pTags[0];
