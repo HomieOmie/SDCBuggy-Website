@@ -9,11 +9,25 @@ html {
 }
 
 header {
-    background-color: grey;
+    background: linear-gradient(-45deg, #ff5e2e, hsl(0, 100%, 53%), #efff0d, #45ffff, #19ff43);
+    background-size: 400% 400%;
     display: flex; /* Makes items inline-horizontal */
     justify-content: space-between; /* Spaces the contents */
     align-items: center; /* Aligns items vertically to the center */
     padding-top: 1vh; /* Adding some spacing on top of header */
+    animation: header-gradient 120s ease infinite;
+}
+
+@keyframes header-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 header > logo > a > img {
