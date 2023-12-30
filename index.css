@@ -583,7 +583,6 @@ join {
 .joinbutton {
     height: 15vh;
     width: 20vw;
-    margin-bottom: 55vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -607,6 +606,7 @@ join {
 
 footer {
     background-color: #898989;
+    width: 100%;
 }
 
 .designer-credit {
