@@ -133,3 +133,33 @@ function scrollIntoMainView(sectionName) {
         });
     }
 }
+
+// For alternating main view glitch text
+document.addEventListener('DOMContentLoaded', function () {
+    const innovation = document.getElementById("innovation");
+    const community = document.getElementById("community");
+    const competition = document.getElementById("competition");
+
+    var i = 0;
+
+    function changeGlitchView() {
+        console.log(i);
+        if (i == 0) {
+            innovation.style.display = "block";
+            community.style.display = "none";
+            competition.style.display = "none";
+        } else if (i == 1) {
+            innovation.style.display = "none";
+            community.style.display = "block";
+            competition.style.display = "none";
+        } else {
+            innovation.style.display = "none";
+            community.style.display = "none";
+            competition.style.display = "block";
+        }
+
+        i = (i + 1) % 3;
+    }
+
+    setInterval(changeGlitchView, 2500);
+})

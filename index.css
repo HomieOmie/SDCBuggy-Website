@@ -216,7 +216,7 @@ main > div {
 }
 
 main > div > h1 {
-    font-size: 10vh;
+    font-size: 15vh;
     font-family: 'sdc';
     display: inline-flex;
     justify-content: space-between;
@@ -224,74 +224,90 @@ main > div > h1 {
     margin-bottom: 0;
 }
 
-main > div > h1:not(:last-child) {
-    margin-right: 2.5vh;
-}
-
-.imagecontainer {
+.glitch-wrapper {
     position: absolute;
     z-index: -1;
-    height: 100%;
     width: 100%;
-    overflow: hidden;
+    height: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.wrapper {
-    width: 100%;
-    height: 100%;
+.glitch {
+    position: absolute;
+    font-weight: bold;
+    color: #000000;
+    letter-spacing: 3px;
+    z-index: 1;
+    font-size: 20vh;
+    font-family: 'sdc';
+}
+
+.glitch:before,
+.glitch:after {
+    display: block;
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+
+.glitch:before {
+    animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    color: #00FFFF;
     z-index: -1;
-    display: flex;
-    flex-direction: column;
-    animation: slide 30s infinite;
 }
 
-@keyframes slide {
-    0% {
-        transform: translateY(0);
-    }
-    10% {
-        transform: translateY(0);
-    }
-    20% {
-        transform: translateY(-104%);
-    }
-    30% {
-        transform: translateY(-104%);
-    }
-    40% {
-        transform: translateY(-104%);
-    }
-    50% {
-        transform: translateY(-204%);
-    }
-    60% {
-        transform: translateY(-204%);
-    }
-    70% {
-        transform: translateY(-204%);
-    }
-    80% {
-        transform: translateY(-104%);
-    }
-    90% {
-        transform: translateY(-104%);
-    }
-    100% {
-        transform: translateY(0%);
-    }
+.glitch:after {
+    animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    color: #FF00FF;
+    z-index: -2;
+}
+
+#innovation {
+    display: none;
+    margin-left: 90vh;
+    margin-bottom: 45vh;
 }
 
 #community {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: none;
+    margin-right: 100vh;
+    margin-bottom: 45vh;
 }
 
 #competition {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: none;
+    margin-right: 18vh;
+    margin-top: 45vh;
+}
+
+@keyframes glitch-it {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+main > div > h1:not(:last-child) {
+    margin-right: 2.5vh;
 }
 
 .carrot-down {
