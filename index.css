@@ -743,3 +743,17 @@ footer {
 .copyright > p {
     filter: invert(100%);
 }
+
+.footer-contact {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.footer-contact > a {
+    font-family: 'sora-regular';
+    color: #ffffff;
+    text-decoration: none;
+}
