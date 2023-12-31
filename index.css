@@ -6,6 +6,7 @@ body {
 
 html {
     scroll-snap-type: y mandatory;
+    background-color: #000000;
 }
 
 header {
@@ -222,6 +223,7 @@ main > div > h1 {
     justify-content: space-between;
     margin-top: 0;
     margin-bottom: 0;
+    color: #ffffff;
 }
 
 .glitch-wrapper {
@@ -315,6 +317,7 @@ main > div > h1:not(:last-child) {
     width: auto;
     margin-bottom: 1vh;
     cursor: pointer;
+    filter: invert(100%);
 }
 
 .carrot-up {
@@ -323,6 +326,7 @@ main > div > h1:not(:last-child) {
     margin-top: 1vh;
     transform: rotate(180deg);
     cursor: pointer;
+    filter: invert(100%);
 }
 
 leads {
@@ -350,6 +354,7 @@ leads > div > h1 {
     font-family: 'sdc';
     margin-top: 0;
     margin-bottom: 0;
+    color: #ffffff;
 }
 
 leads > div > h1:not(:last-child) {
@@ -440,6 +445,7 @@ leads > leadcards {
 
 .card > p {
     font-family: 'sora-regular';
+    color: #ffffff;
 }
 
 .name {
@@ -463,6 +469,7 @@ leads > leadcards {
     height: 6vh;
     width: auto;
     cursor: pointer;
+    filter: invert(100%);
 }
 
 .info {
@@ -500,11 +507,17 @@ leads > leadcards {
 #phone {
     height: 6vh;
     width: auto;
+    filter: invert(100%);
 }
 
 #email {
     height: 6vh;
     width: auto;
+    filter: invert(100%);
+}
+
+#linkedin {
+    filter: invert(100%);
 }
 
 roles {
@@ -555,7 +568,7 @@ roles > h1 {
 }
 
 .rolecontainer {
-    background-color: #898989;
+    background-color: #ffffff;
     min-height: 76vh;
     width: 100%;
     display: flex;
@@ -668,7 +681,7 @@ join {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #898989;
+    background-color: #ffffff;
     padding-right: 1.5vh;
     border-radius: 3vh;
     cursor: pointer;
@@ -687,8 +700,12 @@ join {
 }
 
 footer {
-    background-color: #898989;
+    background-color: #000000;
     width: 100%;
+    border: 2px solid #ffffff;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
 }
 
 .designer-credit {
@@ -700,6 +717,7 @@ footer {
 .designer-credit > p {
     font-family: 'sora-bold';
     font-size: 2.25vh;
+    color: #ffffff;
 }
 
 .designer-credit > p:first-child {
@@ -712,8 +730,16 @@ footer {
     align-items: center;
 }
 
+#genbod {
+    filter: invert(100%);
+}
+
 .copyright {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.copyright > p {
+    filter: invert(100%);
 }
