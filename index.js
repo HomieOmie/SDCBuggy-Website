@@ -1,3 +1,5 @@
+// TODO: Github Issue 16: Images should be preloaded when page is loaded
+
 
 // For the hamburger menu for smaller screen sizes
 function myFunction() {
