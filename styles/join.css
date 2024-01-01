@@ -1,0 +1,98 @@
+join {
+    min-height: 100vh;
+    max-height: none;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.joinlink {
+    text-decoration: none;
+    color: #000000;
+}
+
+.joinbutton {
+    height: 15vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding-right: 1.5vh;
+    border-radius: 3vh;
+    cursor: pointer;
+}
+
+.joinheading {
+    font-family: 'sdc';
+    font-size: 10vh;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer-image {
+    height: 10vh;
+    width: auto;
+}
+
+footer {
+    background-color: #000000;
+    width: 100%;
+    border: 2px solid #ffffff;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+.designer-credit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.designer-credit > p {
+    font-family: 'sora-bold';
+    font-size: 2.25vh;
+    color: #ffffff;
+}
+
+.designer-credit > p:first-child {
+    margin-right: 2vh;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#genbod {
+    filter: invert(100%);
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright > p {
+    filter: invert(100%);
+}
+
+.footer-contact {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.footer-contact > a {
+    font-family: 'sora-regular';
+    color: #ffffff;
+    text-decoration: none;
+}
