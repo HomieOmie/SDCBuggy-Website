@@ -1,0 +1,302 @@
+header {
+    background: linear-gradient(-45deg, #ff5e2e, hsl(0, 100%, 53%), #efff0d, #45ffff, #19ff43);
+    background-size: 400% 400%;
+    display: flex; /* Makes items inline-horizontal */
+    justify-content: space-between; /* Spaces the contents */
+    align-items: center; /* Aligns items vertically to the center */
+    padding-top: 1vh; /* Adding some spacing on top of header */
+    animation: header-gradient 120s ease infinite;
+    width: 100%;
+}
+
+@keyframes header-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header > logo > a > img {
+    margin-left: 2vw;
+    height: 13vh; /* Sizing the SVG logo */
+    width: auto;
+}
+
+@media (max-width: 782px) { /* Gets rid of the record view if screen width is too small */
+    header > records {
+        display: none;
+    }
+}
+
+header > records > ul {
+    padding: 0; /* Removed unecessary padding */
+    margin-top: 0;
+    margin-bottom: 1.5vh;
+}
+
+header > records > ul > a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header > records > ul > a > ul {
+    display: flex; /* Makes [sex record] inline */
+    justify-content: space-between; /* Adds some space between sex and record*/
+    list-style-type: none; /* Gets rid of bullets */
+    padding: 0; /* Removed unnecessary padding */
+}
+
+header > records > ul > a > ul:last-child {
+    margin-top: 2vh;
+}
+
+header > records > ul > a > ul > li:first-child {
+    margin-right: 3vw;
+}
+
+header > records > ul > a > ul > li > p {
+    font-size: 3.5vh;
+    font-family: 'sdc';
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media (max-width: 522px) { /* Gets rid of standard nav view if screen is too small */
+    header > nav {
+        display: none;
+    }
+}
+
+header > nav {
+    margin-right: 4vw;
+}
+
+header > nav > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header > nav > ul > li {
+    cursor: pointer;
+}
+
+header > nav > ul > li:not(:last-child) {
+    margin-right: 5vw;
+}
+
+header > nav > ul > li > a {
+    display: flex;
+    flex-direction: row;
+    font-size: 5vh;
+    font-family: 'sdc';
+    transition: 0.25s ease-in-out;
+}
+
+header > nav > ul > li > a:hover {
+    font-size: 6vh;
+}
+
+header > nav > ul > li > a > p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header > nav > ul > li > a > p:first-child {
+    margin-right: 1.5vh;
+}
+
+header > hamburger {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 3vh;
+}
+
+header > hamburger > .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #000000;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 3vh;
+}
+
+header > hamburger > .bar1 {
+    margin-top: 0;
+}
+
+header > hamburger > .bar3 {
+    margin-bottom: 0;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+@media (min-width: 523px) { /* The hamburger icon will only display when screen is small enough */
+    header {
+        flex-wrap: wrap;
+    }
+    
+    header > hamburger {
+        display: none;
+    }
+}
+
+.mobilemenu {
+    display: none;
+    background-color: #333;
+    color: white;
+    width:100%;
+    top: 100%;
+    left: 0;
+    position: relative;
+}
+
+.mobilemenu ul {
+    list-style-type: none;
+    width: 100%;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobilemenu ul li {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.mobilemenu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main > div {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > div > h1 {
+    font-size: 15vh;
+    font-family: 'sdc';
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #ffffff;
+}
+
+.glitch-wrapper {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.glitch {
+    position: absolute;
+    font-weight: bold;
+    color: #000000;
+    letter-spacing: 3px;
+    z-index: 1;
+    font-size: 20vh;
+    font-family: 'sdc';
+}
+
+.glitch:before,
+.glitch:after {
+    display: block;
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+
+.glitch:before {
+    animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    color: #00FFFF;
+    z-index: -1;
+}
+
+.glitch:after {
+    animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    color: #FF00FF;
+    z-index: -2;
+}
+
+#innovation {
+    display: none;
+    margin-left: 90vh;
+    margin-bottom: 45vh;
+}
+
+#community {
+    display: none;
+    margin-right: 100vh;
+    margin-bottom: 45vh;
+}
+
+#competition {
+    display: none;
+    margin-right: 18vh;
+    margin-top: 45vh;
+}
+
+@keyframes glitch-it {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+main > div > h1:not(:last-child) {
+    margin-right: 2.5vh;
+}
