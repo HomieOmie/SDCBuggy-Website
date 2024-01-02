@@ -1,5 +1,8 @@
 /* TODO: Github Issue 21: Comment all code in this file. */
 /* TODO: Github Issue 25: Change syntax throughout file. */
+
+@import url("../font.css");
+
 roles {
     min-height: 100vh;
     max-height: none;

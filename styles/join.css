@@ -1,5 +1,8 @@
 /* TODO: Github Issue 18: Comment all code in this file */
 /* TODO: Github Issue 23: Change syntax throughout file */
+
+@import url("../font.css");
+
 join {
     min-height: 100vh;
     max-height: none;
@@ -11,12 +14,12 @@ join {
     align-items: center;
 }
 
-.joinlink {
+.join-link {
     text-decoration: none;
     color: #000000;
 }
 
-.joinbutton {
+.join-button {
     height: 15vh;
     width: 20vw;
     display: flex;
@@ -28,7 +31,7 @@ join {
     cursor: pointer;
 }
 
-.joinheading {
+.join-heading {
     font-family: 'sdc';
     font-size: 10vh;
     margin-top: 0;
@@ -75,17 +78,17 @@ footer {
     filter: invert(100%);
 }
 
-.copyright {
+.copyright-statement {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.copyright > p {
+.copyright-statement > p {
     filter: invert(100%);
 }
 
-.footer-contact {
+.footer-contact-container {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -93,7 +96,7 @@ footer {
     margin-bottom: 2vh;
 }
 
-.footer-contact > a {
+.footer-contact-container > a {
     font-family: 'sora-regular';
     color: #ffffff;
     text-decoration: none;

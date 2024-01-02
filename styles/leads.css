@@ -1,5 +1,8 @@
 /* TODO: Github Issue 19: Comment all code in this file */
 /* TODO: Github Issue 24: Change Syntax throughout file. */
+
+@import url("../font.css");
+
 leads {
     min-height: 100vh;
     max-height: none;
