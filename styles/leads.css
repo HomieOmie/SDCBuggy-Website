@@ -60,6 +60,14 @@ leads > leadcards {
     background-position: 30%;
 }
 
+#lewis {
+    background-image: url('../profile_images/lewis.jpg');
+    background-size: 75%;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+}
+
 .r1 {
     display: inline-flex;
     justify-content: center;
@@ -190,6 +198,11 @@ leads > leadcards {
     filter: invert(100%);
 }
 
-#linkedin {
+.linkedin {
     filter: invert(100%);
+}
+
+.instagram {
+    height: 6vh;
+    width: auto;
 }
