@@ -55,14 +55,14 @@ leads > leadcards {
 
 #om {
     background-image: url('../profile_images/IMG_2186.jpg');
-    background-size: 150%;
+    background-size: 230%;
     border-radius: 50%;
-    background-position: 30%;
+    background-position: 30% 45%;
 }
 
 #lewis {
     background-image: url('../profile_images/lewis.jpg');
-    background-size: 75%;
+    background-size: 100%;
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: 50% 0%;
