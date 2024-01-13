@@ -145,7 +145,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var i = 0;
 
     function changeGlitchView() {
-        console.log(i);
         if (i == 0) {
             innovation.style.display = "block";
             community.style.display = "none";
