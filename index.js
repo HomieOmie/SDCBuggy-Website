@@ -10,7 +10,7 @@ function myFunction() {
     mobileMenu.style.display = (mobileMenu.style.display === 'flex') ? 'none' : 'flex';
 }
 
-// For the roles
+// For the leads
 document.addEventListener('DOMContentLoaded', function () {
     const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
