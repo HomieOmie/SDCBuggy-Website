@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
             closeButton.addEventListener('click', function (event) {
                 card.style.width = 'auto';
                 card.style.minHeight = 'auto';
-                card.style.backgroundColor = '#ffffff';
+                card.style.backgroundColor = '#000000';
                 card.style.marginRight = '5vh';
 
                 name.style.fontFamily = 'sora-regular';
