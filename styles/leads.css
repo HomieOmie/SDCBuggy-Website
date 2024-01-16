@@ -5,43 +5,71 @@
 
 leads {
     min-height: 100vh;
-    max-height: none;
-    width: 100vw;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
+.section-title {
+    display: flex;
+    height: 10vh;
+    margin-bottom: 1vh;
+}
 
-leads > div {
-    display: inline-flex;
-    flex-wrap: wrap;
-    /* flex-direction: row; */
+.section-title > h1 {
+    color: #FFFFFF;
+    font-family: 'sdc';
+    font-size: 10vh;
+    margin-top: 3vh;
+    margin-bottom: 0vh;
+}
+
+leadcards {
+    height: 86vh;
+    margin-bottom: 3vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 45vw;
 }
 
-leads > div > h1 {
-    font-size: 8vh;
-    font-family: 'sdc';
-    margin-top: 0;
-    margin-bottom: 0;
-    color: #ffffff;
-}
-
-leads > div > h1:not(:last-child) {
-    margin-right: 2.5vh;
-}
-
-leads > leadcards {
-    min-height: 76vh;
-    width: 92vw;
+.row {
+    height: 100%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.card {
+    height: 85%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 12px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.267);
+}
+
+.name {
+    color:#FFFFFF;
+    font-family: 'sora-regular';
+    margin-top: 0vh;
+    margin-bottom: 1vh;
+    font-size: 1.35vw;
+}
+
+.position {
+    color: #FFFFFF;
+    font-family: 'sora-regular';
+    margin-bottom: 0vh;
+    margin-top: 1vh;
+    font-size: 1.35vw;
 }
 
 .circle {
@@ -53,45 +81,6 @@ leads > leadcards {
     border-radius: 50%;
 }
 
-#om {
-    background-image: url('../profile_images/IMG_2186.jpg');
-    background-size: 230%;
-    border-radius: 50%;
-    background-position: 30% 45%;
-}
-
-#lewis {
-    background-image: url('../profile_images/lewis.jpg');
-    background-size: 100%;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: 50% 0%;
-}
-
-.r1 {
-    width: 100%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.r2 {
-    display: inline-flex;
-}
-
-.r3 {
-    display: inline-flex;
-}
-
-.card {
-    margin-right: 10vh;
-    border: 2px solid white;
-}
-
-.name {
-    color: #FFFFFF;
-}
-
-.title {
-    color: #FFFFFF;
+.section-title > h1:not(:last-child) {
+    margin-right: 10px;
 }

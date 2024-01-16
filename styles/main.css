@@ -216,7 +216,7 @@ main > div > h1 {
     display: inline-flex;
     justify-content: space-between;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 40vh;
     color: #ffffff;
 }
 

@@ -68,142 +68,85 @@
         <div>
             <h1>SDC</h1><h1>READY?</h1>
         </div>
-        <img class="carrot-down" src = "icons/carrot.svg" onclick = "scrollIntoMainView('leads')" />
     </main>
 
     <leads id = "leads" style="scroll-snap-align: start;">
-        <img class="carrot-up" src = "icons/carrot.svg" onclick = "scrollIntoMainView('main')"/>
-        <div>
+        <div class="section-title">
             <h1>RaCeDay</h1><h1>23</h1><h1>Team</h1><h1>LeaD</h1>
         </div>
+
         <leadcards>
-            <div class="r1">
-                <div class = "card">
-                    <img class="close" src="icons/close.svg"/>
+            <div class="row" id="row1">
+                <div class="card">
                     <p class="name">Matthew Garcia</p>
                     <div class="circle"></div>
-                    <p class="title">Chairman</p>
-                    <p class="info"></p>
-                    <ul class="links"></ul>
+                    <p class="position">Chairman</p>
                 </div>
-                <div class = "card">
-                    <img class="close" src="icons/close.svg"/>
+                <div class="card">
                     <p class="name">Ethan Huang</p>
                     <div class="circle"></div>
-                    <p class="title">Head Mechanic</p>
-                    <p class="info"></p>
-                    <ul class="links"></ul>
+                    <p class="position">Head Mechanic</p>
                 </div>
-                
-            </div>
-            <div class="r2">
-                <div class = "card">
-                    <img class="close" src="icons/close.svg"/>
+                <div class="card">
                     <p class="name">Lewis Rockwell</p>
                     <div class="circle"></div>
-                    <p class="title">Build Lead</p>
-                    <p class="info"></p>
-                    <ul class="links"></ul>
+                    <p class="position">Build Lead</p>
                 </div>
-                <div class = "card">
-                    <img class="close" src="icons/close.svg"/>
+                <div class="card">
                     <p class="name">Aiden Cheng</p>
                     <div class="circle"></div>
-                    <p class="title">Build Lead</p>
-                    <p class="info"></p>
-                    <ul class="links"></ul>
+                    <p class="position">Build Lead</p>
                 </div>
-                <div class = "card">
-                    <img class="close" src="icons/close.svg"/>
+                <div class="card">
                     <p class="name">Lewis Rockwell</p>
-                    <div class="circle" id="lewis"></div>
-                    <p class="title">Head Driver</p>
-                    <!-- <p class="info">
-                        Howdy! I am a third-year mechanical engineering student, 
-                        and I am in charge of SDC’s new build and I lead the team’s 
-                        driver program. I also love to push!
-                    </p> -->
-                    <ul class="links">
-                        <!-- <li><a href="https://www.linkedin.com/in/lewis-rockwell/" target="_blank"><img src="icons/linkedin.svg" class="linkedin"/></a></li>
-                        <li><a href="https://www.instagram.com/djlewy123/?hl=en" target="_blank"><img src="logos//instagram-footer-image.svg" class="instagram"/></a></li> -->
-                    </ul>
+                    <div class="circle"></div>
+                    <p class="position">Head Driver</p>
                 </div>
-                <div class = "card">
-                    <img class="close" src="icons/close.svg"/>
-                    <p class="name">Om Patel</p>
-                    <div class="circle" id="om"></div>
-                    <p class="title">Push Captain</p>
-                    <!-- <p class="info">
-                        Hi! I'm a Junior majoring in Information Systems with a minor in
-                        Software Engineering! I'm currently one of the three Push Captains for
-                        the team and I'm also the one who built this website.
-                    </p> -->
-                    <ul class="links">
-                        <!-- <li><img src="icons/phone.svg" id="phone" onclick="alert('860-701-8344')"/></li>
-                        <li><a href="mailto:ompatel@cmu.edu"><img src="icons/email.svg" id="email" /></a></li>
-                        <li><a href="https://www.linkedin.com/in/om-patel-carnegie-mellon-university" target="_blank"><img src="icons/linkedin.svg" class="linkedin"/></a></li> -->
-                    </ul>
-                </div>
-                <div class = "card">
-                    <img class="close" src="icons/close.svg"/>
+                <div class="card">
                     <p class="name">Susan Huang</p>
                     <div class="circle"></div>
-                    <p class="title">Push Captain</p>
-                    <p class="info"></p>
-                    <ul class="links"></ul>
+                    <p class="position">Push Captain</p>
                 </div>
             </div>
-            <div class="r3">
-                <div class = "card">
-                    <img class="close" src="icons/close.svg"/>
+            <div class="row" id="row2">
+                <div class="card">
+                    <p class="name">Om Patel</p>
+                    <div class="circle"></div>
+                    <p class="position">Push Captain</p>
+                </div>
+                <div class="card">
                     <p class="name">Elliot Escalante</p>
                     <div class="circle"></div>
-                    <p class="title">Head Mechanic</p>
-                    <p class="info"></p>
-                    <ul class="links"></ul>
+                    <p class="position">Head Mechanic</p>
                 </div>
-                <div class = "card">
-                    <img class="close" src="icons/close.svg"/>
+                <div class="card">
                     <p class="name">Gordon Xu</p>
                     <div class="circle"></div>
-                    <p class="title">Head Mechanic</p>
-                    <p class="info"></p>
-                    <ul class="links"></ul>
+                    <p class="position">Head Mechanic</p>
                 </div>
-                <div class = "card">
-                    <img class="close" src="icons/close.svg"/>
+                <div class="card">
                     <p class="name">Paul Gonzalez</p>
                     <div class="circle"></div>
-                    <p class="title">Head Mechanic</p>
-                    <p class="info"></p>
-                    <ul class="links"></ul>
+                    <p class="position">Head Mechanic</p>
                 </div>
-                <div class = "card">
-                    <img class="close" src="icons/close.svg"/>
+                <div class="card">
                     <p class="name">David Rotunno</p>
                     <div class="circle"></div>
-                    <p class="title">Push Captain</p>
-                    <p class="info"></p>
-                    <ul class="links"></ul>
+                    <p class="position">Push Captain</p>
                 </div>
-                <div class = "card">
-                    <img class="close" src="icons/close.svg"/>
+                <div class="card">
                     <p class="name">Yuma Matsuoka</p>
                     <div class="circle"></div>
-                    <p class="title">Advisor</p>
-                    <p class="info"></p>
-                    <ul class="links"></ul>
+                    <p class="position">Advisor</p>
                 </div>
             </div>
         </leadcards>
-        <img class="carrot-down" src = "icons/carrot.svg" onclick = "scrollIntoMainView('roles')"/>
     </leads>
 
     <roles id = "roles" style="scroll-snap-align: start;">
-        <img class="carrot-up" src = "icons/carrot.svg" onclick = "scrollIntoMainView('leads')"/>
-       
+
         <h1>RoleS</h1>
-       
+
         <div class="cardscontainer">
             <ul class="rolecards">
                 <li class="rolecardslistitem">
@@ -268,11 +211,9 @@
                 </li>
             </ul>
         </div>
-        <img class="carrot-down" src = "icons/carrot.svg" onclick = "scrollIntoMainView('join')"/>
     </roles>
 
     <join id = "join" style="scroll-snap-align: start; margin-bottom: -24vh;">
-        <img class="carrot-up" src = "icons/carrot.svg" onclick = "scrollIntoMainView('roles')"/>
         <a class="join-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfMeVyHyllE8OAypGxqDy45A36hWcIUovecQklyQCn3eMPvnw/viewform?usp=sf_link" target="_blank">
             <div class="join-button">
                 <h1 class="join-heading">JOIN!</h1>
