@@ -81,6 +81,29 @@ leadcards {
     border-radius: 50%;
 }
 
+#om {
+    background-image: url('../profile_images/IMG_2186.jpg');
+    background-size: 230%;
+    border-radius: 50%;
+    background-position: 30% 45%;
+}
+
+#lewis-1 {
+    background-image: url('../profile_images/lewis.jpg');
+    background-size: 100%;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+}
+
+#lewis-2 {
+    background-image: url('../profile_images/lewis.jpg');
+    background-size: 100%;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+}
+
 .section-title > h1:not(:last-child) {
     margin-right: 10px;
 }
