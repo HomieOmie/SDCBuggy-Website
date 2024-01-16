@@ -69,140 +69,29 @@ leads > leadcards {
 }
 
 .r1 {
+    width: 100%;
     display: inline-flex;
     justify-content: center;
-    flex-wrap: wrap;
-}
-
-.r1 .card:not(:last-child) {
-    margin-right: 5vw;
+    align-items: center;
 }
 
 .r2 {
     display: inline-flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.r2 .card:not(:last-child) {
-    margin-right: 5vw;
 }
 
 .r3 {
     display: inline-flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.r3 .card:not(:last-child) {
-    margin-right: 5vw;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1vh 2vh 0vh 2vh;
-    border-radius: 2vh;
-    transition: width .5s ease, min-height .5s ease, background-color 0.5s ease;
-    position: relative;
-    overflow: hidden;
-    margin-right: auto;
-}
-
-.card.expanded {
-    width: 92vw;
-    min-height: 76vh;
-    margin-right: 0vh;
-    background-color: #33333377;
-}
-
-.card.hidden {
-    display: none;
-}
-
-.card:hover {
-    background-color: #33333377;
-}
-
-.card > p {
-    font-family: 'sora-regular';
-    color: #ffffff;
+    margin-right: 10vh;
+    border: 2px solid white;
 }
 
 .name {
-    margin-top: 0vh;
-    margin-bottom: .75vh;
+    color: #FFFFFF;
 }
 
 .title {
-    margin-top: .75vh;
-    margin-bottom: 0vh;
-}
-
-.card > p:last-child {
-    margin-top: 1vh;
-}
-
-.close {
-    display: none;
-    position: absolute;
-    right: 0;
-    height: 6vh;
-    width: auto;
-    cursor: pointer;
-    filter: invert(100%);
-}
-
-.info {
-    padding-top: 4vh;
-    font-size: 3vh;
-    font-family: 'sora-regular';
-}
-
-.info {
-    display: none;
-    font-size: 3vh;
-}
-
-.links {
-    list-style-type: none;
-    display: none;
-    flex-direction: row;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    min-width: 25vw;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 4vh;
-}
-
-.links > li:not(:last-child) {
-    margin-right: 1vh;
-}
-
-.links > li:not(:first-child) {
-    margin-left: 1vh;
-}
-
-#phone {
-    height: 6vh;
-    width: auto;
-    filter: invert(100%);
-}
-
-#email {
-    height: 6vh;
-    width: auto;
-    filter: invert(100%);
-}
-
-.linkedin {
-    filter: invert(100%);
-}
-
-.instagram {
-    height: 6vh;
-    width: auto;
+    color: #FFFFFF;
 }
