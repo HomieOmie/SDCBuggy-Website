@@ -10,6 +10,15 @@ function myFunction() {
     mobileMenu.style.display = (mobileMenu.style.display === 'flex') ? 'none' : 'flex';
 }
 
+//TODO: This should be removed and rows should adjust accordingly automatically
+function getRow(id) {
+    if (id <= 6) {
+        return '.row2';
+    } else {
+        return '.row1';
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
@@ -20,10 +29,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             })
 
-            card.classList.toggle('card-expanded');
+            const rowName = getRow(parseInt(card.id));
+            const collapseRow = document.querySelector(rowName);
+            collapseRow.classList.toggle('hidden');
 
-            const closeButton = card.querySelector('close');
-            closeButton.classList.toggle('close-expanded')
+            card.classList.toggle('expanded');
+
+            // const closeButton = card.querySelector('close');
+            // closeButton.classList.toggle('close-expanded')
 
         })
     })

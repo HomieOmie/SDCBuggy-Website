@@ -33,12 +33,28 @@ leadcards {
     align-items: center;
 }
 
-.row {
+.row1 {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.row2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.row1.hidden {
+    display: none;
+}
+
+.row2.hidden {
+    display: none;
 }
 
 .card {
@@ -50,6 +66,18 @@ leadcards {
     justify-content: space-evenly;
     border-radius: 12px;
     transition: background-color 0.2s ease-in-out;
+    margin-top: 35px;
+}
+
+.card.expanded {
+    width: 90vw;
+    height: 86vh;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.card.hidden {
+    display: none;
 }
 
 .card:hover {
