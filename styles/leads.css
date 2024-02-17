@@ -146,6 +146,13 @@ leadcards {
     background-position: 40% 40%;
 }
 
+#susan {
+    background-image: url('../profile_images/susan.png');
+    background-repeat: no-repeat;
+    background-size: 240%;
+    background-position: 40% 40%;
+}
+
 .section-title > h1:not(:last-child) {
     margin-right: 10px;
 }
