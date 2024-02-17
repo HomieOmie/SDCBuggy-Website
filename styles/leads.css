@@ -139,6 +139,13 @@ leadcards {
     background-position: 50%;
 }
 
+#matthew {
+    background-image: url('../profile_images/matthew.png');
+    background-size: 170%;
+    background-repeat: no-repeat;
+    background-position: 40% 40%;
+}
+
 .section-title > h1:not(:last-child) {
     margin-right: 10px;
 }
