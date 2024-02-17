@@ -153,6 +153,11 @@ leadcards {
     background-position: 40% 40%;
 }
 
+#david {
+    background-image: url('../profile_images/DavidPhoto.png');
+    background-repeat: no-repeat;
+}
+
 .section-title > h1:not(:last-child) {
     margin-right: 10px;
 }
