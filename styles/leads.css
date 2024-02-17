@@ -132,6 +132,13 @@ leadcards {
     background-position: 50% 0%;
 }
 
+#paul {
+    background-image: url('../profile_images/paul.jpg');
+    background-image: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
 .section-title > h1:not(:last-child) {
     margin-right: 10px;
 }
